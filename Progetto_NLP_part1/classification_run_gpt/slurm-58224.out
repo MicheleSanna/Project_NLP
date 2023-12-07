@@ -1,0 +1,2185 @@
+Node IP: 10.128.2.151
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : train.py
+  min_nodes        : 2
+  max_nodes        : 2
+  nproc_per_node   : 2
+  run_id           : 6127
+  rdzv_backend     : c10d
+  rdzv_endpoint    : 10.128.2.151:29500
+  rdzv_configs     : {'timeout': 900}
+  max_restarts     : 0
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+INFO:torch.distributed.launcher.api:Starting elastic_operator with launch configs:
+  entrypoint       : train.py
+  min_nodes        : 2
+  max_nodes        : 2
+  nproc_per_node   : 2
+  run_id           : 6127
+  rdzv_backend     : c10d
+  rdzv_endpoint    : 10.128.2.151:29500
+  rdzv_configs     : {'timeout': 900}
+  max_restarts     : 0
+  monitor_interval : 5
+  log_dir          : None
+  metrics_cfg      : {}
+
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /tmp/torchelastic_iry9hda8/6127_asvcgymg
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:log directory set to: /tmp/torchelastic_cxwaa6ag/6127_wkqdfdl0
+INFO:torch.distributed.elastic.agent.server.api:[default] starting workers for entrypoint: python
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous'ing worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=0
+  master_addr=gpu001.hpc
+  master_port=38325
+  group_rank=0
+  group_world_size=2
+  local_ranks=[0, 1]
+  role_ranks=[0, 1]
+  global_ranks=[0, 1]
+  role_world_sizes=[4, 4]
+  global_world_sizes=[4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.agent.server.api:[default] Rendezvous complete for workers. Result:
+  restart_count=0
+  master_addr=gpu001.hpc
+  master_port=38325
+  group_rank=1
+  group_world_size=2
+  local_ranks=[0, 1]
+  role_ranks=[2, 3]
+  global_ranks=[2, 3]
+  role_world_sizes=[4, 4]
+  global_world_sizes=[4, 4]
+
+INFO:torch.distributed.elastic.agent.server.api:[default] Starting worker group
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_cxwaa6ag/6127_wkqdfdl0/attempt_0/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_cxwaa6ag/6127_wkqdfdl0/attempt_0/1/error.json
+INFO:torch.distributed.elastic.agent.server.local_elastic_agent:Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+INFO:torch.distributed.elastic.multiprocessing:Setting worker0 reply file to: /tmp/torchelastic_iry9hda8/6127_asvcgymg/attempt_0/0/error.json
+INFO:torch.distributed.elastic.multiprocessing:Setting worker1 reply file to: /tmp/torchelastic_iry9hda8/6127_asvcgymg/attempt_0/1/error.json
+/u/dssc/msanna00/.conda/envs/deeplearning3/lib/python3.7/site-packages/torch/cuda/__init__.py:497: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/u/dssc/msanna00/.conda/envs/deeplearning3/lib/python3.7/site-packages/torch/cuda/__init__.py:497: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+PORT:  38325
+WORLD SIZE:  4
+MASTER NODE:  gpu001.hpc
+My slurm id is:  0
+PORT:  38325
+WORLD SIZE:  4
+MASTER NODE:  gpu001.hpc
+My rank is:  1
+My slurm id is:  1
+PORT:  38325
+WORLD SIZE:  4
+My rank is:  2
+MASTER NODE:  gpu001.hpc
+PORT:  38325
+My slurm id is:  0
+WORLD SIZE:  4
+My rank is:  0
+MASTER NODE:  gpu001.hpc
+My slurm id is:  1
+My rank is:  3
+Downloading:   0%|          | 0.00/665 [00:00<?, ?B/s]Downloading: 100%|██████████| 665/665 [00:00<00:00, 1.27MB/s]
+Downloading:   0%|          | 0.00/548M [00:00<?, ?B/s]Downloading:   1%|          | 6.31M/548M [00:00<00:08, 63.1MB/s]Downloading:   3%|▎         | 16.1M/548M [00:00<00:06, 83.3MB/s]Downloading:   4%|▍         | 24.5M/548M [00:00<00:06, 78.0MB/s]Downloading:   6%|▌         | 32.3M/548M [00:00<00:06, 78.1MB/s]Downloading:   8%|▊         | 42.3M/548M [00:00<00:05, 85.7MB/s]Downloading:   9%|▉         | 50.9M/548M [00:00<00:12, 40.2MB/s]Downloading:  11%|█         | 60.4M/548M [00:01<00:09, 50.2MB/s]Downloading:  13%|█▎        | 70.5M/548M [00:01<00:07, 60.8MB/s]Downloading:  14%|█▍        | 78.8M/548M [00:01<00:11, 39.9MB/s]Downloading:  16%|█▌        | 88.7M/548M [00:01<00:09, 49.8MB/s]Downloading:  18%|█▊        | 98.0M/548M [00:01<00:11, 39.3MB/s]Downloading:  19%|█▉        | 104M/548M [00:02<00:10, 42.3MB/s] Downloading:  21%|██        | 114M/548M [00:02<00:08, 52.8MB/s]Downloading:  22%|██▏       | 122M/548M [00:02<00:10, 39.1MB/s]Downloading:  24%|██▎       | 129M/548M [00:02<00:09, 43.5MB/s]Downloading:  25%|██▌       | 139M/548M [00:02<00:07, 54.2MB/s]Downloading:  27%|██▋       | 147M/548M [00:03<00:10, 38.9MB/s]Downloading:  28%|██▊       | 154M/548M [00:03<00:09, 43.3MB/s]Downloading:  30%|██▉       | 164M/548M [00:03<00:07, 54.2MB/s]Downloading:  31%|███▏      | 171M/548M [00:03<00:09, 39.1MB/s]Downloading:  32%|███▏      | 177M/548M [00:03<00:08, 42.2MB/s]Downloading:  34%|███▍      | 187M/548M [00:03<00:06, 53.6MB/s]Downloading:  36%|███▌      | 196M/548M [00:03<00:05, 58.9MB/s]Downloading:  38%|███▊      | 206M/548M [00:04<00:05, 68.2MB/s]Downloading:  39%|███▉      | 216M/548M [00:04<00:04, 76.6MB/s]Downloading:  41%|████      | 225M/548M [00:04<00:11, 28.3MB/s]Downloading:  43%|████▎     | 235M/548M [00:05<00:08, 36.9MB/s]Downloading:  45%|████▍     | 245M/548M [00:05<00:06, 46.0MB/s]Downloading:  46%|████▌     | 253M/548M [00:05<00:12, 23.4MB/s]Downloading:  48%|████▊     | 263M/548M [00:06<00:09, 30.9MB/s]Downloading:  50%|████▉     | 273M/548M [00:06<00:06, 39.5MB/s]Downloading:  51%|█████▏    | 282M/548M [00:06<00:11, 23.0MB/s]Downloading:  53%|█████▎    | 288M/548M [00:07<00:09, 27.0MB/s]Downloading:  54%|█████▍    | 298M/548M [00:07<00:07, 35.6MB/s]Downloading:  56%|█████▌    | 308M/548M [00:07<00:05, 45.2MB/s]Downloading:  58%|█████▊    | 316M/548M [00:08<00:10, 22.0MB/s]Downloading:  59%|█████▉    | 326M/548M [00:08<00:07, 29.1MB/s]Downloading:  61%|██████▏   | 336M/548M [00:08<00:05, 37.6MB/s]Downloading:  63%|██████▎   | 344M/548M [00:08<00:06, 30.5MB/s]Downloading:  65%|██████▍   | 354M/548M [00:08<00:04, 39.3MB/s]Downloading:  66%|██████▌   | 363M/548M [00:09<00:05, 33.5MB/s]Downloading:  67%|██████▋   | 369M/548M [00:09<00:05, 35.1MB/s]Downloading:  69%|██████▉   | 379M/548M [00:09<00:03, 45.1MB/s]Downloading:  71%|███████   | 387M/548M [00:09<00:04, 36.6MB/s]Downloading:  72%|███████▏  | 393M/548M [00:09<00:04, 38.8MB/s]Downloading:  73%|███████▎  | 403M/548M [00:09<00:02, 49.6MB/s]Downloading:  75%|███████▍  | 410M/548M [00:10<00:02, 53.9MB/s]Downloading:  76%|███████▌  | 417M/548M [00:10<00:02, 44.4MB/s]Downloading:  78%|███████▊  | 427M/548M [00:10<00:02, 55.6MB/s]Downloading:  79%|███████▉  | 435M/548M [00:10<00:02, 39.4MB/s]Downloading:  80%|████████  | 440M/548M [00:10<00:02, 42.3MB/s]Downloading:  82%|████████▏ | 450M/548M [00:10<00:01, 53.8MB/s]Downloading:  84%|████████▍ | 459M/548M [00:11<00:02, 39.5MB/s]Downloading:  85%|████████▍ | 465M/548M [00:11<00:01, 42.5MB/s]Downloading:  87%|████████▋ | 475M/548M [00:11<00:01, 53.6MB/s]Downloading:  88%|████████▊ | 484M/548M [00:11<00:01, 39.7MB/s]Downloading:  89%|████████▉ | 490M/548M [00:11<00:01, 42.7MB/s]Downloading:  91%|█████████ | 500M/548M [00:12<00:00, 53.7MB/s]Downloading:  93%|█████████▎| 508M/548M [00:12<00:01, 38.6MB/s]Downloading:  94%|█████████▍| 515M/548M [00:12<00:00, 43.0MB/s]Downloading:  96%|█████████▌| 525M/548M [00:12<00:00, 53.7MB/s]Downloading:  97%|█████████▋| 533M/548M [00:12<00:00, 39.5MB/s]Downloading:  98%|█████████▊| 539M/548M [00:13<00:00, 42.5MB/s]Downloading: 100%|██████████| 548M/548M [00:13<00:00, 41.7MB/s]
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Downloading:   0%|          | 0.00/1.04M [00:00<?, ?B/s]Downloading:   6%|▋         | 66.6k/1.04M [00:00<00:01, 662kB/s]Downloading:  14%|█▍        | 150k/1.04M [00:00<00:01, 737kB/s] Downloading:  41%|████      | 427k/1.04M [00:00<00:00, 1.65MB/s]Downloading:  97%|█████████▋| 1.01M/1.04M [00:00<00:00, 3.29MB/s]Downloading: 100%|██████████| 1.04M/1.04M [00:00<00:00, 2.56MB/s]
+Downloading:   0%|          | 0.00/456k [00:00<?, ?B/s]Downloading:  22%|██▏       | 100k/456k [00:00<00:00, 1.00MB/s]Downloading:  68%|██████▊   | 312k/456k [00:00<00:00, 1.66MB/s]Downloading: 100%|██████████| 456k/456k [00:00<00:00, 2.20MB/s]
+------------------------
+
+------------------------
+
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+------------------------
+
+------------------------
+
+I'm process 2 using GPU 0
+I'm process 1 using GPU 1
+I'm process 3 using GPU 1
+I'm process 0 using GPU 0
+Labels:  tensor([3, 0, 0, 1, 0, 3, 0, 0, 3, 1, 4, 4, 4, 1, 2, 0], device='cuda:1')
+Labels:  tensor([2, 2, 1, 1, 1, 4, 4, 4, 3, 2, 0, 3, 3, 4, 0, 3], device='cuda:0')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:1')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+Outputs:  Labels:  tensor([3, 1, 1, 4, 0, 2, 4, 1, 3, 0, 2, 3, 2, 2, 4, 4], device='cuda:0')
+Outputs:  tensor([[    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9992,     0.0000,     0.0000,     0.0008,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9983,     0.0000,     0.0001,     0.0015,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9990,     0.0000,     0.0001,     0.0010,     0.0000],
+        [    0.9990,     0.0000,     0.0001,     0.0009,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9965,     0.0000,     0.0001,     0.0034,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0005,     0.0000],
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9985,     0.0000,     0.0002,     0.0012,     0.0001]],
+       device='cuda:0')
+tensor([[    0.9985,     0.0000,     0.0002,     0.0013,     0.0001],
+        [    0.9951,     0.0000,     0.0000,     0.0049,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9986,     0.0000,     0.0002,     0.0011,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+Metric:  tensor(0.1250, device='cuda:0')
+        [    0.9993,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9983,     0.0000,     0.0001,     0.0016,     0.0000]],
+       device='cuda:1')
+------------------------
+Metric: Outputs:   tensor(0.3750, device='cuda:1')
+------------------------
+Labels:  tensor([0, 4, 2, 3, 0, 1, 2, 2, 3, 2, 2, 4, 4, 1, 1, 2], device='cuda:1')
+tensor([[    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9991,     0.0000,     0.0000,     0.0009,     0.0000],
+        [    0.9978,     0.0000,     0.0000,     0.0022,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9991,     0.0000,     0.0000,     0.0009,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9994,     0.0000,     0.0001,     0.0005,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+Preds:  tensor([0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:1')
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000]],
+       device='cuda:0')
+Outputs:  tensor([[    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.3380,     0.0421,     0.2678,     0.0121,     0.3399],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9993,     0.0000,     0.0001,     0.0006,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+Metric:  tensor(0.1250, device='cuda:0')
+------------------------
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9981,     0.0000,     0.0000,     0.0019,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0.1875, device='cuda:1')
+------------------------
+Labels:  tensor([2, 0, 4, 4, 4, 0, 0, 2, 4, 0, 4, 0, 0, 0, 1, 2], device='cuda:1')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:1')
+Outputs:  tensor([[    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9983,     0.0000,     0.0001,     0.0016,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9946,     0.0000,     0.0007,     0.0046,     0.0001],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9924,     0.0001,     0.0018,     0.0051,     0.0006],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0.4375, device='cuda:1')
+------------------------
+Labels:  tensor([0, 1, 4, 2, 3, 2, 1, 0, 2, 2, 2, 0, 2, 4, 3, 4], device='cuda:0')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+Outputs:  tensor([[    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9988,     0.0000,     0.0000,     0.0011,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9984,     0.0000,     0.0001,     0.0015,     0.0000],
+        [    0.9991,     0.0000,     0.0001,     0.0008,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9986,     0.0000,     0.0002,     0.0011,     0.0000]],
+       device='cuda:0')
+Labels:  tensor([1, 1, 1, 1, 2, 1, 0, 0, 4, 4, 2, 1, 3, 0, 0, 1], device='cuda:0')
+Metric:  tensor(0.1875, device='cuda:0')
+------------------------
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+Outputs:  tensor([[    0.9993,     0.0000,     0.0002,     0.0005,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9990,     0.0000,     0.0000,     0.0010,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9994,     0.0000,     0.0001,     0.0005,     0.0000],
+        [    0.9957,     0.0000,     0.0000,     0.0043,     0.0000],
+        [    0.9964,     0.0000,     0.0003,     0.0033,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9985,     0.0000,     0.0000,     0.0014,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000]],
+       device='cuda:0')
+Metric:  tensor(0.2500, device='cuda:0')
+------------------------
+Labels:  tensor([3, 2, 3, 1, 3, 4, 3, 0, 3, 1, 1, 0, 0, 3, 2, 0], device='cuda:1')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:1')
+Outputs:  tensor([[    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9992,     0.0000,     0.0001,     0.0008,     0.0000],
+        [    0.9959,     0.0000,     0.0001,     0.0040,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9993,     0.0000,     0.0001,     0.0006,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9991,     0.0000,     0.0001,     0.0008,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9481,     0.0005,     0.0315,     0.0095,     0.0104],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0.2500, device='cuda:1')
+------------------------
+Labels:  tensor([2, 3, 4, 0, 1, 3, 4, 3, 4, 2, 1, 0, 4, 4, 4, 4], device='cuda:1')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:1')
+Outputs:  tensor([[    0.9989,     0.0000,     0.0000,     0.0011,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9995,     0.0000,     0.0001,     0.0004,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9977,     0.0000,     0.0002,     0.0020,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9989,     0.0000,     0.0000,     0.0011,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0.1250, device='cuda:1')
+------------------------
+Labels:  tensor([3, 3, 3, 2, 1, 3, 1, 1, 2, 2, 0, 3, 3, 4, 4, 2], device='cuda:0')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+Outputs:  tensor([[    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9991,     0.0000,     0.0000,     0.0009,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9738,     0.0006,     0.0125,     0.0083,     0.0047],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000]],
+       device='cuda:0')
+Metric:  tensor(0.0625, device='cuda:0')
+------------------------
+Labels:  tensor([4, 0, 4, 0, 4, 1, 1, 3, 0, 4, 4, 3, 0, 2, 3, 0], device='cuda:0')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+Outputs:  tensor([[    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9992,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9980,     0.0000,     0.0001,     0.0019,     0.0000],
+        [    0.9979,     0.0000,     0.0003,     0.0018,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9987,     0.0000,     0.0000,     0.0013,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9964,     0.0000,     0.0000,     0.0035,     0.0000]],
+       device='cuda:0')
+Metric:  tensor(0.3125, device='cuda:0')
+------------------------
+Labels:  tensor([3, 2, 3, 2, 3, 0, 2, 4, 1, 1, 1, 1, 0, 0, 0, 0], device='cuda:1')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0], device='cuda:1')
+Outputs:  tensor([[    0.9995,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9990,     0.0000,     0.0000,     0.0009,     0.0000],
+        [    0.9975,     0.0000,     0.0007,     0.0016,     0.0001],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9975,     0.0000,     0.0000,     0.0025,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.0112,     0.1293,     0.2271,     0.0025,     0.6300],
+        [    0.9987,     0.0000,     0.0001,     0.0011,     0.0000],
+        [    0.9984,     0.0000,     0.0000,     0.0015,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9985,     0.0000,     0.0001,     0.0015,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0.3125, device='cuda:1')
+------------------------
+Labels:  tensor([4, 4, 4, 2, 3, 2, 4, 1, 2, 1, 1, 2, 0, 1, 0, 1], device='cuda:1')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:1')
+Outputs:  tensor([[    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9996,     0.0000,     0.0001,     0.0003,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9988,     0.0000,     0.0001,     0.0011,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9984,     0.0000,     0.0002,     0.0014,     0.0000],
+        [    0.9982,     0.0000,     0.0001,     0.0017,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0.1250, device='cuda:1')
+------------------------
+Labels:  tensor([4, 1, 1, 0, 0, 1, 2, 4, 2, 4, 4, 1, 0, 1, 2, 1], device='cuda:0')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+Outputs:  tensor([[    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9988,     0.0000,     0.0001,     0.0011,     0.0000],
+        [    0.9992,     0.0000,     0.0001,     0.0007,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9988,     0.0000,     0.0000,     0.0012,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9981,     0.0000,     0.0001,     0.0018,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9992,     0.0000,     0.0001,     0.0007,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9974,     0.0000,     0.0001,     0.0025,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000]],
+       device='cuda:0')
+Metric:  tensor(0.1875, device='cuda:0')
+------------------------
+Labels:  tensor([2, 0, 1, 3, 4, 2, 0, 0, 2, 1, 0, 1, 1, 2, 3, 4], device='cuda:0')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+Outputs:  tensor([[    0.9994,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9986,     0.0000,     0.0001,     0.0013,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0002,     0.0000]],
+       device='cuda:0')
+Metric:  tensor(0.2500, device='cuda:0')
+------------------------
+Labels:  tensor([1, 1, 2, 1, 1, 4, 1, 4, 4, 1, 3, 2, 4, 3, 3, 4], device='cuda:1')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:1')
+Outputs:  tensor([[    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9987,     0.0000,     0.0000,     0.0013,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9995,     0.0000,     0.0001,     0.0004,     0.0000],
+        [    0.9987,     0.0000,     0.0001,     0.0012,     0.0000],
+        [    0.9989,     0.0000,     0.0001,     0.0010,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9985,     0.0000,     0.0001,     0.0014,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0., device='cuda:1')
+------------------------
+Labels:  tensor([4, 4, 2, 0, 0, 4, 4, 1, 4, 2, 0, 1, 1, 2, 2, 1], device='cuda:1')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:1')
+Outputs:  tensor([[    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9984,     0.0000,     0.0000,     0.0016,     0.0000],
+        [    0.9984,     0.0000,     0.0001,     0.0015,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9990,     0.0000,     0.0001,     0.0009,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0.1875, device='cuda:1')
+------------------------
+Mean loss[10.005257212749163] | Mean metric[0.20192776964372866]
+Stupid loss[0.0] | Naive soulution metric[0.2]
+Freezed:  module.transformer.wte.weight
+Freezed:  module.transformer.wpe.weight
+Freezed:  module.transformer.h.0.ln_1.weight
+Freezed:  module.transformer.h.0.ln_1.bias
+Freezed:  module.transformer.h.0.attn.c_attn.weight
+Freezed:  module.transformer.h.0.attn.c_attn.bias
+Freezed:  module.transformer.h.0.attn.c_proj.weight
+Freezed:  module.transformer.h.0.attn.c_proj.bias
+Freezed:  module.transformer.h.0.ln_2.weight
+Freezed:  module.transformer.h.0.ln_2.bias
+Freezed:  module.transformer.h.0.mlp.c_fc.weight
+Freezed:  module.transformer.h.0.mlp.c_fc.bias
+Freezed:  module.transformer.h.0.mlp.c_proj.weight
+Freezed:  module.transformer.h.0.mlp.c_proj.bias
+Freezed:  module.transformer.h.1.ln_1.weight
+Freezed:  module.transformer.h.1.ln_1.bias
+Freezed:  module.transformer.h.1.attn.c_attn.weight
+Freezed:  module.transformer.h.1.attn.c_attn.bias
+Freezed:  module.transformer.h.1.attn.c_proj.weight
+Freezed:  module.transformer.h.1.attn.c_proj.bias
+Freezed:  module.transformer.h.1.ln_2.weight
+Freezed:  module.transformer.h.1.ln_2.bias
+Freezed:  module.transformer.h.1.mlp.c_fc.weight
+Freezed:  module.transformer.h.1.mlp.c_fc.bias
+Freezed:  module.transformer.h.1.mlp.c_proj.weight
+Freezed:  module.transformer.h.1.mlp.c_proj.bias
+Freezed:  module.transformer.h.2.ln_1.weight
+Freezed:  module.transformer.h.2.ln_1.bias
+Freezed:  module.transformer.h.2.attn.c_attn.weight
+Freezed:  module.transformer.h.2.attn.c_attn.bias
+Freezed:  module.transformer.h.2.attn.c_proj.weight
+Freezed:  module.transformer.h.2.attn.c_proj.bias
+Freezed:  module.transformer.h.2.ln_2.weight
+Freezed:  module.transformer.h.2.ln_2.bias
+Freezed:  module.transformer.h.2.mlp.c_fc.weight
+Freezed:  module.transformer.h.2.mlp.c_fc.bias
+Freezed:  module.transformer.h.2.mlp.c_proj.weight
+Freezed:  module.transformer.h.2.mlp.c_proj.bias
+Freezed:  module.transformer.h.3.ln_1.weight
+Freezed:  module.transformer.h.3.ln_1.bias
+Freezed:  module.transformer.h.3.attn.c_attn.weight
+Freezed:  module.transformer.h.3.attn.c_attn.bias
+Freezed:  module.transformer.h.3.attn.c_proj.weight
+Freezed:  module.transformer.h.3.attn.c_proj.bias
+Freezed:  module.transformer.h.3.ln_2.weight
+Freezed:  module.transformer.h.3.ln_2.bias
+Freezed:  module.transformer.h.3.mlp.c_fc.weight
+Freezed:  module.transformer.h.3.mlp.c_fc.bias
+Freezed:  module.transformer.h.3.mlp.c_proj.weight
+Freezed:  module.transformer.h.3.mlp.c_proj.bias
+Freezed:  module.transformer.h.4.ln_1.weight
+Freezed:  module.transformer.h.4.ln_1.bias
+Freezed:  module.transformer.h.4.attn.c_attn.weight
+Freezed:  module.transformer.h.4.attn.c_attn.bias
+Freezed:  module.transformer.h.4.attn.c_proj.weight
+Freezed:  module.transformer.h.4.attn.c_proj.bias
+Freezed:  module.transformer.h.4.ln_2.weight
+Freezed:  module.transformer.h.4.ln_2.bias
+Freezed:  module.transformer.h.4.mlp.c_fc.weight
+Freezed:  module.transformer.h.4.mlp.c_fc.bias
+Freezed:  module.transformer.h.4.mlp.c_proj.weight
+Freezed:  module.transformer.h.4.mlp.c_proj.bias
+Freezed:  module.transformer.h.5.ln_1.weight
+Freezed:  module.transformer.h.5.ln_1.bias
+Freezed:  module.transformer.h.5.attn.c_attn.weight
+Freezed:  module.transformer.h.5.attn.c_attn.bias
+Freezed:  module.transformer.h.5.attn.c_proj.weight
+Freezed:  module.transformer.h.5.attn.c_proj.bias
+Freezed:  module.transformer.h.5.ln_2.weight
+Freezed:  module.transformer.h.5.ln_2.bias
+Freezed:  module.transformer.h.5.mlp.c_fc.weight
+Freezed:  module.transformer.h.5.mlp.c_fc.bias
+Freezed:  module.transformer.h.5.mlp.c_proj.weight
+Freezed:  module.transformer.h.5.mlp.c_proj.bias
+EPOCH 0
+--------------
+Labels:  tensor([1, 1, 2, 4, 2, 4, 0, 2, 3, 2, 0, 1, 1, 3, 2, 0], device='cuda:0')
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+Outputs:  tensor([[    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9990,     0.0000,     0.0000,     0.0010,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9992,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9992,     0.0000,     0.0000,     0.0008,     0.0000],
+        [    0.9934,     0.0000,     0.0011,     0.0054,     0.0000],
+        [    0.9963,     0.0000,     0.0001,     0.0036,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9990,     0.0000,     0.0000,     0.0009,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000]],
+       device='cuda:0')
+Metric:  tensor(0.1875, device='cuda:0')
+------------------------
+Mean loss[9.999987042084038] | Mean metric[0.2042154709614446]
+Stupid loss[0.0] | Naive soulution metric[0.2]
+Freezed:  module.transformer.wte.weight
+Freezed:  module.transformer.wpe.weight
+Freezed:  module.transformer.h.0.ln_1.weight
+Freezed:  module.transformer.h.0.ln_1.bias
+Freezed:  module.transformer.h.0.attn.c_attn.weight
+Freezed:  module.transformer.h.0.attn.c_attn.bias
+Freezed:  module.transformer.h.0.attn.c_proj.weight
+Freezed:  module.transformer.h.0.attn.c_proj.bias
+Freezed:  module.transformer.h.0.ln_2.weight
+Freezed:  module.transformer.h.0.ln_2.bias
+Freezed:  module.transformer.h.0.mlp.c_fc.weight
+Freezed:  module.transformer.h.0.mlp.c_fc.bias
+Freezed:  module.transformer.h.0.mlp.c_proj.weight
+Freezed:  module.transformer.h.0.mlp.c_proj.bias
+Freezed:  module.transformer.h.1.ln_1.weight
+Freezed:  module.transformer.h.1.ln_1.bias
+Freezed:  module.transformer.h.1.attn.c_attn.weight
+Freezed:  module.transformer.h.1.attn.c_attn.bias
+Freezed:  module.transformer.h.1.attn.c_proj.weight
+Freezed:  module.transformer.h.1.attn.c_proj.bias
+Freezed:  module.transformer.h.1.ln_2.weight
+Freezed:  module.transformer.h.1.ln_2.bias
+Freezed:  module.transformer.h.1.mlp.c_fc.weight
+Freezed:  module.transformer.h.1.mlp.c_fc.bias
+Freezed:  module.transformer.h.1.mlp.c_proj.weight
+Freezed:  module.transformer.h.1.mlp.c_proj.bias
+Freezed:  module.transformer.h.2.ln_1.weight
+Freezed:  module.transformer.h.2.ln_1.bias
+Freezed:  module.transformer.h.2.attn.c_attn.weight
+Freezed:  module.transformer.h.2.attn.c_attn.bias
+Freezed:  module.transformer.h.2.attn.c_proj.weight
+Freezed:  module.transformer.h.2.attn.c_proj.bias
+Freezed:  module.transformer.h.2.ln_2.weight
+Freezed:  module.transformer.h.2.ln_2.bias
+Freezed:  module.transformer.h.2.mlp.c_fc.weight
+Freezed:  module.transformer.h.2.mlp.c_fc.bias
+Freezed:  module.transformer.h.2.mlp.c_proj.weight
+Freezed:  module.transformer.h.2.mlp.c_proj.bias
+Freezed:  module.transformer.h.3.ln_1.weight
+Freezed:  module.transformer.h.3.ln_1.bias
+Freezed:  module.transformer.h.3.attn.c_attn.weight
+Freezed:  module.transformer.h.3.attn.c_attn.bias
+Freezed:  module.transformer.h.3.attn.c_proj.weight
+Freezed:  module.transformer.h.3.attn.c_proj.bias
+Freezed:  module.transformer.h.3.ln_2.weight
+Freezed:  module.transformer.h.3.ln_2.bias
+Freezed:  module.transformer.h.3.mlp.c_fc.weight
+Freezed:  module.transformer.h.3.mlp.c_fc.bias
+Freezed:  module.transformer.h.3.mlp.c_proj.weight
+Freezed:  module.transformer.h.3.mlp.c_proj.bias
+Freezed:  module.transformer.h.4.ln_1.weight
+Freezed:  module.transformer.h.4.ln_1.bias
+Freezed:  module.transformer.h.4.attn.c_attn.weight
+Labels:  tensor([4, 2, 2, 0, 0, 3, 3, 0, 0, 0, 0, 1, 4, 2, 0, 4], device='cuda:0')
+Freezed:  module.transformer.h.4.attn.c_attn.bias
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0')
+Freezed:  module.transformer.h.4.attn.c_proj.weight
+Freezed:  module.transformer.h.4.attn.c_proj.bias
+Outputs:  tensor([[    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9987,     0.0000,     0.0001,     0.0011,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9987,     0.0000,     0.0001,     0.0011,     0.0000],
+        [    0.9993,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9992,     0.0000,     0.0000,     0.0007,     0.0000],
+        [    0.9991,     0.0000,     0.0000,     0.0009,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9985,     0.0000,     0.0000,     0.0015,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9987,     0.0000,     0.0001,     0.0012,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9996,     0.0000,     0.0000,     0.0003,     0.0000],
+Freezed:  module.transformer.h.4.ln_2.weight
+        [    0.9996,     0.0000,     0.0000,     0.0004,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000]],
+       device='cuda:0')
+Freezed:  module.transformer.h.4.ln_2.bias
+Metric:  tensor(0.4375, device='cuda:0')
+Freezed:  module.transformer.h.4.mlp.c_fc.weight
+------------------------
+Freezed:  module.transformer.h.4.mlp.c_fc.bias
+Mean loss[10.078193163278337] | Mean metric[0.19762689116642265]
+Freezed:  module.transformer.h.4.mlp.c_proj.weight
+Stupid loss[0.0] | Naive soulution metric[0.2]
+Freezed:  module.transformer.h.4.mlp.c_proj.bias
+Freezed:  module.transformer.wte.weight
+Freezed:  module.transformer.h.5.ln_1.weight
+Freezed:  module.transformer.wpe.weight
+Freezed:  module.transformer.h.5.ln_1.bias
+Freezed:  module.transformer.h.0.ln_1.weight
+Freezed:  module.transformer.h.5.attn.c_attn.weight
+Freezed:  module.transformer.h.0.ln_1.bias
+Freezed:  module.transformer.h.5.attn.c_attn.bias
+Freezed:  module.transformer.h.0.attn.c_attn.weight
+Freezed:  module.transformer.h.5.attn.c_proj.weight
+Freezed:  module.transformer.h.0.attn.c_attn.bias
+Freezed:  module.transformer.h.5.attn.c_proj.bias
+Freezed:  module.transformer.h.0.attn.c_proj.weight
+Freezed:  module.transformer.h.5.ln_2.weight
+Freezed:  module.transformer.h.0.attn.c_proj.bias
+Freezed:  module.transformer.h.5.ln_2.bias
+Freezed:  module.transformer.h.0.ln_2.weight
+Freezed:  module.transformer.h.5.mlp.c_fc.weight
+Freezed:  module.transformer.h.0.ln_2.bias
+Freezed:  module.transformer.h.5.mlp.c_fc.bias
+Freezed:  module.transformer.h.0.mlp.c_fc.weight
+Freezed:  module.transformer.h.5.mlp.c_proj.weight
+Freezed:  module.transformer.h.0.mlp.c_fc.bias
+Freezed:  module.transformer.h.5.mlp.c_proj.bias
+Freezed:  module.transformer.h.0.mlp.c_proj.weight
+EPOCH 0
+--------------
+Freezed:  module.transformer.h.0.mlp.c_proj.bias
+Freezed:  module.transformer.h.1.ln_1.weight
+Freezed:  module.transformer.h.1.ln_1.bias
+Freezed:  module.transformer.h.1.attn.c_attn.weight
+Freezed:  module.transformer.h.1.attn.c_attn.bias
+Freezed:  module.transformer.h.1.attn.c_proj.weight
+Freezed:  module.transformer.h.1.attn.c_proj.bias
+Freezed:  module.transformer.h.1.ln_2.weight
+Freezed:  module.transformer.h.1.ln_2.bias
+Freezed:  module.transformer.h.1.mlp.c_fc.weight
+Freezed:  module.transformer.h.1.mlp.c_fc.bias
+Freezed:  module.transformer.h.1.mlp.c_proj.weight
+Freezed:  module.transformer.h.1.mlp.c_proj.bias
+Freezed:  module.transformer.h.2.ln_1.weight
+Freezed:  module.transformer.h.2.ln_1.bias
+Freezed:  module.transformer.h.2.attn.c_attn.weight
+Freezed:  module.transformer.h.2.attn.c_attn.bias
+Freezed:  module.transformer.h.2.attn.c_proj.weight
+Freezed:  module.transformer.h.2.attn.c_proj.bias
+Freezed:  module.transformer.h.2.ln_2.weight
+Freezed:  module.transformer.h.2.ln_2.bias
+Freezed:  module.transformer.h.2.mlp.c_fc.weight
+Freezed:  module.transformer.h.2.mlp.c_fc.bias
+Freezed:  module.transformer.h.2.mlp.c_proj.weight
+Freezed:  module.transformer.h.2.mlp.c_proj.bias
+Freezed:  module.transformer.h.3.ln_1.weight
+Freezed:  module.transformer.h.3.ln_1.bias
+Freezed:  module.transformer.h.3.attn.c_attn.weight
+Freezed:  module.transformer.h.3.attn.c_attn.bias
+Freezed:  module.transformer.h.3.attn.c_proj.weight
+Freezed:  module.transformer.h.3.attn.c_proj.bias
+Freezed:  module.transformer.h.3.ln_2.weight
+Freezed:  module.transformer.h.3.ln_2.bias
+Freezed:  module.transformer.h.3.mlp.c_fc.weight
+Freezed:  module.transformer.h.3.mlp.c_fc.bias
+Freezed:  module.transformer.h.3.mlp.c_proj.weight
+Freezed:  module.transformer.h.3.mlp.c_proj.bias
+Freezed:  module.transformer.h.4.ln_1.weight
+Freezed:  module.transformer.h.4.ln_1.bias
+Freezed:  module.transformer.h.4.attn.c_attn.weight
+Freezed:  module.transformer.h.4.attn.c_attn.bias
+Freezed:  module.transformer.h.4.attn.c_proj.weight
+Freezed:  module.transformer.h.4.attn.c_proj.bias
+Freezed:  module.transformer.h.4.ln_2.weight
+Freezed:  module.transformer.h.4.ln_2.bias
+Freezed:  module.transformer.h.4.mlp.c_fc.weight
+Freezed:  module.transformer.h.4.mlp.c_fc.bias
+Freezed:  module.transformer.h.4.mlp.c_proj.weight
+Freezed:  module.transformer.h.4.mlp.c_proj.bias
+Freezed:  module.transformer.h.5.ln_1.weight
+Freezed:  module.transformer.h.5.ln_1.bias
+Freezed:  module.transformer.h.5.attn.c_attn.weight
+Freezed:  module.transformer.h.5.attn.c_attn.bias
+Freezed:  module.transformer.h.5.attn.c_proj.weight
+Freezed:  module.transformer.h.5.attn.c_proj.bias
+Freezed:  module.transformer.h.5.ln_2.weight
+Freezed:  module.transformer.h.5.ln_2.bias
+Freezed:  module.transformer.h.5.mlp.c_fc.weight
+Freezed:  module.transformer.h.5.mlp.c_fc.bias
+Freezed:  module.transformer.h.5.mlp.c_proj.weight
+Labels:  tensor([0, 4, 0, 3, 0, 1, 2, 1, 4, 2, 1, 1, 4, 3, 1, 3], device='cuda:1')
+Freezed:  module.transformer.h.5.mlp.c_proj.bias
+Preds:  tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:1')
+EPOCH 0
+--------------
+Outputs:  tensor([[    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    1.0000,     0.0000,     0.0000,     0.0000,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9992,     0.0000,     0.0001,     0.0007,     0.0000],
+        [    0.9975,     0.0000,     0.0001,     0.0024,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9999,     0.0000,     0.0000,     0.0001,     0.0000],
+        [    0.9995,     0.0000,     0.0000,     0.0005,     0.0000],
+        [    0.9998,     0.0000,     0.0000,     0.0002,     0.0000],
+        [    0.9987,     0.0000,     0.0001,     0.0012,     0.0000],
+        [    0.9994,     0.0000,     0.0000,     0.0006,     0.0000],
+        [    0.9997,     0.0000,     0.0000,     0.0003,     0.0000],
+        [    0.9984,     0.0000,     0.0001,     0.0015,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0.1875, device='cuda:1')
+------------------------
+Mean loss[10.04475360710252] | Mean metric[0.19985358711566617]
+Stupid loss[0.0] | Naive soulution metric[0.2]
+Freezed:  module.transformer.wte.weight
+Freezed:  module.transformer.wpe.weight
+Freezed:  module.transformer.h.0.ln_1.weight
+Freezed:  module.transformer.h.0.ln_1.bias
+Freezed:  module.transformer.h.0.attn.c_attn.weight
+Freezed:  module.transformer.h.0.attn.c_attn.bias
+Freezed:  module.transformer.h.0.attn.c_proj.weight
+Freezed:  module.transformer.h.0.attn.c_proj.bias
+Freezed:  module.transformer.h.0.ln_2.weight
+Freezed:  module.transformer.h.0.ln_2.bias
+Freezed:  module.transformer.h.0.mlp.c_fc.weight
+Freezed:  module.transformer.h.0.mlp.c_fc.bias
+Freezed:  module.transformer.h.0.mlp.c_proj.weight
+Freezed:  module.transformer.h.0.mlp.c_proj.bias
+Freezed:  module.transformer.h.1.ln_1.weight
+Freezed:  module.transformer.h.1.ln_1.bias
+Freezed:  module.transformer.h.1.attn.c_attn.weight
+Freezed:  module.transformer.h.1.attn.c_attn.bias
+Freezed:  module.transformer.h.1.attn.c_proj.weight
+Freezed:  module.transformer.h.1.attn.c_proj.bias
+Freezed:  module.transformer.h.1.ln_2.weight
+Freezed:  module.transformer.h.1.ln_2.bias
+Freezed:  module.transformer.h.1.mlp.c_fc.weight
+Freezed:  module.transformer.h.1.mlp.c_fc.bias
+Freezed:  module.transformer.h.1.mlp.c_proj.weight
+Freezed:  module.transformer.h.1.mlp.c_proj.bias
+Freezed:  module.transformer.h.2.ln_1.weight
+Freezed:  module.transformer.h.2.ln_1.bias
+Freezed:  module.transformer.h.2.attn.c_attn.weight
+Freezed:  module.transformer.h.2.attn.c_attn.bias
+Freezed:  module.transformer.h.2.attn.c_proj.weight
+Freezed:  module.transformer.h.2.attn.c_proj.bias
+Freezed:  module.transformer.h.2.ln_2.weight
+Freezed:  module.transformer.h.2.ln_2.bias
+Freezed:  module.transformer.h.2.mlp.c_fc.weight
+Freezed:  module.transformer.h.2.mlp.c_fc.bias
+Freezed:  module.transformer.h.2.mlp.c_proj.weight
+Freezed:  module.transformer.h.2.mlp.c_proj.bias
+Freezed:  module.transformer.h.3.ln_1.weight
+Freezed:  module.transformer.h.3.ln_1.bias
+Freezed:  module.transformer.h.3.attn.c_attn.weight
+Freezed:  module.transformer.h.3.attn.c_attn.bias
+Freezed:  module.transformer.h.3.attn.c_proj.weight
+Freezed:  module.transformer.h.3.attn.c_proj.bias
+Freezed:  module.transformer.h.3.ln_2.weight
+Freezed:  module.transformer.h.3.ln_2.bias
+Freezed:  module.transformer.h.3.mlp.c_fc.weight
+Freezed:  module.transformer.h.3.mlp.c_fc.bias
+Freezed:  module.transformer.h.3.mlp.c_proj.weight
+Freezed:  module.transformer.h.3.mlp.c_proj.bias
+Freezed:  module.transformer.h.4.ln_1.weight
+Freezed:  module.transformer.h.4.ln_1.bias
+Freezed:  module.transformer.h.4.attn.c_attn.weight
+Freezed:  module.transformer.h.4.attn.c_attn.bias
+Freezed:  module.transformer.h.4.attn.c_proj.weight
+Freezed:  module.transformer.h.4.attn.c_proj.bias
+Freezed:  module.transformer.h.4.ln_2.weight
+Freezed:  module.transformer.h.4.ln_2.bias
+Freezed:  module.transformer.h.4.mlp.c_fc.weight
+Freezed:  module.transformer.h.4.mlp.c_fc.bias
+Freezed:  module.transformer.h.4.mlp.c_proj.weight
+Freezed:  module.transformer.h.4.mlp.c_proj.bias
+Freezed:  module.transformer.h.5.ln_1.weight
+Freezed:  module.transformer.h.5.ln_1.bias
+Freezed:  module.transformer.h.5.attn.c_attn.weight
+Freezed:  module.transformer.h.5.attn.c_attn.bias
+Freezed:  module.transformer.h.5.attn.c_proj.weight
+Freezed:  module.transformer.h.5.attn.c_proj.bias
+Freezed:  module.transformer.h.5.ln_2.weight
+Freezed:  module.transformer.h.5.ln_2.bias
+Freezed:  module.transformer.h.5.mlp.c_fc.weight
+Freezed:  module.transformer.h.5.mlp.c_fc.bias
+Freezed:  module.transformer.h.5.mlp.c_proj.weight
+Freezed:  module.transformer.h.5.mlp.c_proj.bias
+EPOCH 0
+--------------
+Step[500] | Loss[0.7787741422653198] | Lr[5e-05]
+Step[500] | Loss[1.0459810495376587] | Lr[5e-05]
+Step[500] | Loss[0.6741744875907898] | Lr[5e-05]
+Step[500] | Loss[0.7930998802185059] | Lr[5e-05]
+Step[1000] | Loss[0.7691762447357178] | Lr[5e-05]
+Step[1000] | Loss[0.9079058170318604] | Lr[5e-05]
+Step[1000] | Loss[1.101861596107483] | Lr[5e-05]
+Step[1000] | Loss[0.9995825886726379] | Lr[5e-05]
+Step[1500] | Loss[0.8407706618309021] | Lr[5e-05]
+Step[1500] | Loss[0.7649139165878296] | Lr[5e-05]
+Step[1500] | Loss[1.0249704122543335] | Lr[5e-05]
+Step[1500] | Loss[0.7812929153442383] | Lr[5e-05]
+Step[2000] | Loss[0.8643547892570496] | Lr[5e-05]
+Step[2000] | Loss[0.9404449462890625] | Lr[5e-05]
+Step[2000] | Loss[0.8462243676185608] | Lr[5e-05]
+Step[2000] | Loss[0.9642339944839478] | Lr[5e-05]
+Step[2500] | Loss[0.9061029553413391] | Lr[5e-05]
+Step[2500] | Loss[1.2280938625335693] | Lr[5e-05]
+Step[2500] | Loss[0.7484598755836487] | Lr[5e-05]
+Step[2500] | Loss[0.9482592940330505] | Lr[5e-05]
+Step[3000] | Loss[1.031962275505066] | Lr[5e-05]
+Step[3000] | Loss[0.4779638648033142] | Lr[5e-05]
+Step[3000] | Loss[0.5299127697944641] | Lr[5e-05]
+Step[3000] | Loss[0.888637900352478] | Lr[5e-05]
+Step[3500] | Loss[0.5885990262031555] | Lr[5e-05]
+Step[3500] | Loss[1.0730043649673462] | Lr[5e-05]
+Step[3500] | Loss[0.6497360467910767] | Lr[5e-05]
+Step[3500] | Loss[0.5229172706604004] | Lr[5e-05]
+Step[4000] | Loss[1.1054760217666626] | Lr[5e-05]
+Step[4000] | Loss[1.0736165046691895] | Lr[5e-05]
+Step[4000] | Loss[0.8155004978179932] | Lr[5e-05]
+Step[4000] | Loss[0.6698901653289795] | Lr[5e-05]
+Step[4500] | Loss[0.8057549595832825] | Lr[5e-05]
+Step[4500] | Loss[0.6798067688941956] | Lr[5e-05]
+Step[4500] | Loss[0.7195863723754883] | Lr[5e-05]
+Step[4500] | Loss[0.6849997043609619] | Lr[5e-05]
+Step[5000] | Loss[0.642596423625946] | Lr[5e-05]
+Step[5000] | Loss[1.169981598854065] | Lr[5e-05]
+Step[5000] | Loss[0.7023628354072571] | Lr[5e-05]
+Step[5000] | Loss[0.9652796983718872] | Lr[5e-05]
+Step[5500] | Loss[1.354323148727417] | Lr[5e-05]
+Step[5500] | Loss[0.8927890062332153] | Lr[5e-05]
+Step[5500] | Loss[0.9963917136192322] | Lr[5e-05]
+Step[5500] | Loss[0.8885439038276672] | Lr[5e-05]
+Step[6000] | Loss[0.6528493165969849] | Lr[5e-05]
+Step[6000] | Loss[0.8159154653549194] | Lr[5e-05]
+Step[6000] | Loss[0.9428182244300842] | Lr[5e-05]
+Step[6000] | Loss[1.1556782722473145] | Lr[5e-05]
+Step[6500] | Loss[0.8043805360794067] | Lr[5e-05]
+Step[6500] | Loss[1.1892369985580444] | Lr[5e-05]
+Step[6500] | Loss[1.114747166633606] | Lr[5e-05]
+Step[6500] | Loss[0.8318944573402405] | Lr[5e-05]
+Step[7000] | Loss[0.8045558333396912] | Lr[5e-05]
+Step[7000] | Loss[0.9349377751350403] | Lr[5e-05]
+Step[7000] | Loss[0.7803300619125366] | Lr[5e-05]
+Step[7000] | Loss[0.7718102931976318] | Lr[5e-05]
+Step[7500] | Loss[0.4131702780723572] | Lr[5e-05]
+Step[7500] | Loss[0.9765869379043579] | Lr[5e-05]
+Step[7500] | Loss[0.8064067959785461] | Lr[5e-05]Step[7500] | Loss[0.5618930459022522] | Lr[5e-05]
+
+Step[8000] | Loss[0.3656735420227051] | Lr[5e-05]
+Step[8000] | Loss[0.600591242313385] | Lr[5e-05]
+Step[8000] | Loss[0.7845633625984192] | Lr[5e-05]
+Step[8000] | Loss[0.799130916595459] | Lr[5e-05]
+Step[8500] | Loss[0.6589362621307373] | Lr[5e-05]
+Step[8500] | Loss[0.6374915242195129] | Lr[5e-05]
+Step[8500] | Loss[0.5713391304016113] | Lr[5e-05]
+Step[8500] | Loss[0.7811406850814819] | Lr[5e-05]
+Step[9000] | Loss[0.5032452940940857] | Lr[5e-05]
+Step[9000] | Loss[0.8755143880844116] | Lr[5e-05]
+Step[9000] | Loss[0.7316824197769165] | Lr[5e-05]
+Step[9000] | Loss[0.9675544500350952] | Lr[5e-05]
+Step[9500] | Loss[1.0665570497512817] | Lr[5e-05]
+Step[9500] | Loss[0.7802394032478333] | Lr[5e-05]
+Step[9500] | Loss[0.5126148462295532] | Lr[5e-05]
+Step[9500] | Loss[0.9435455203056335] | Lr[5e-05]
+Step[10000] | Loss[0.8773088455200195] | Lr[5e-05]
+Step[10000] | Loss[0.7937195301055908] | Lr[5e-05]
+Step[10000] | Loss[0.7496898770332336] | Lr[5e-05]
+Step[10000] | Loss[0.672481119632721] | Lr[5e-05]
+Step[10500] | Loss[0.8482173085212708] | Lr[5e-05]
+Step[10500] | Loss[0.651718258857727] | Lr[5e-05]
+Step[10500] | Loss[0.32780054211616516] | Lr[5e-05]
+Step[10500] | Loss[0.829182505607605] | Lr[5e-05]
+Step[11000] | Loss[0.6627746820449829] | Lr[5e-05]
+Step[11000] | Loss[0.8005000948905945] | Lr[5e-05]
+Step[11000] | Loss[0.7572826147079468] | Lr[5e-05]
+Step[11000] | Loss[0.7157547473907471] | Lr[5e-05]
+Step[11500] | Loss[0.5833979249000549] | Lr[5e-05]
+Step[11500] | Loss[0.526521623134613] | Lr[5e-05]
+Step[11500] | Loss[0.8092581033706665] | Lr[5e-05]Step[11500] | Loss[0.498121976852417] | Lr[5e-05]
+
+Step[12000] | Loss[1.2217410802841187] | Lr[5e-05]
+Step[12000] | Loss[0.7025001645088196] | Lr[5e-05]Step[12000] | Loss[1.368703842163086] | Lr[5e-05]
+
+Step[12000] | Loss[0.7404710650444031] | Lr[5e-05]
+Step[12500] | Loss[0.8349851965904236] | Lr[5e-05]
+Step[12500] | Loss[0.5733428597450256] | Lr[5e-05]
+Step[12500] | Loss[0.7250902056694031] | Lr[5e-05]
+Step[12500] | Loss[0.4675883948802948] | Lr[5e-05]
+Step[13000] | Loss[0.8228978514671326] | Lr[5e-05]
+Step[13000] | Loss[1.5647237300872803] | Lr[5e-05]
+Step[13000] | Loss[1.0612622499465942] | Lr[5e-05]
+Step[13000] | Loss[0.5203984975814819] | Lr[5e-05]
+Step[13500] | Loss[0.8988049030303955] | Lr[5e-05]
+Step[13500] | Loss[0.6141787171363831] | Lr[5e-05]
+Step[13500] | Loss[0.8852890133857727] | Lr[5e-05]
+Step[13500] | Loss[0.6929175853729248] | Lr[5e-05]
+Step[14000] | Loss[0.7014675140380859] | Lr[5e-05]
+Step[14000] | Loss[0.6443355679512024] | Lr[5e-05]
+Step[14000] | Loss[0.916157066822052] | Lr[5e-05]
+Step[14000] | Loss[0.6528133749961853] | Lr[5e-05]
+Step[14500] | Loss[0.9332178831100464] | Lr[5e-05]
+Step[14500] | Loss[0.8407489657402039] | Lr[5e-05]
+Step[14500] | Loss[1.033636450767517] | Lr[5e-05]Step[14500] | Loss[0.6155709028244019] | Lr[5e-05]
+
+Step[15000] | Loss[0.7046608924865723] | Lr[5e-05]
+Step[15000] | Loss[0.813572347164154] | Lr[5e-05]
+Step[15000] | Loss[0.5931094884872437] | Lr[5e-05]
+Step[15000] | Loss[0.4780562222003937] | Lr[5e-05]
+Step[15500] | Loss[0.6608261466026306] | Lr[5e-05]
+Step[15500] | Loss[1.3663811683654785] | Lr[5e-05]
+Step[15500] | Loss[0.4806593060493469] | Lr[5e-05]
+Step[15500] | Loss[1.0132180452346802] | Lr[5e-05]
+Step[16000] | Loss[0.9140524864196777] | Lr[5e-05]
+Step[16000] | Loss[0.590366005897522] | Lr[5e-05]Step[16000] | Loss[1.0005526542663574] | Lr[5e-05]
+
+Step[16000] | Loss[0.7420336604118347] | Lr[5e-05]
+Step[16500] | Loss[0.7120908498764038] | Lr[5e-05]
+Step[16500] | Loss[0.7752137780189514] | Lr[5e-05]
+Step[16500] | Loss[0.8858279585838318] | Lr[5e-05]
+Step[16500] | Loss[0.8813356757164001] | Lr[5e-05]
+Step[17000] | Loss[1.0618146657943726] | Lr[5e-05]
+Step[17000] | Loss[0.5572310090065002] | Lr[5e-05]
+Step[17000] | Loss[0.637507438659668] | Lr[5e-05]Step[17000] | Loss[0.929473876953125] | Lr[5e-05]
+
+Step[17500] | Loss[0.5925459861755371] | Lr[5e-05]
+Step[17500] | Loss[0.5158879160881042] | Lr[5e-05]
+Step[17500] | Loss[0.8347121477127075] | Lr[5e-05]
+Step[17500] | Loss[0.6288558840751648] | Lr[5e-05]
+Step[18000] | Loss[1.0867018699645996] | Lr[5e-05]
+Step[18000] | Loss[0.8267360925674438] | Lr[5e-05]
+Step[18000] | Loss[1.0072402954101562] | Lr[5e-05]
+Step[18000] | Loss[1.1404904127120972] | Lr[5e-05]
+Step[18500] | Loss[1.1415376663208008] | Lr[5e-05]
+Step[18500] | Loss[0.7579721212387085] | Lr[5e-05]
+Step[18500] | Loss[0.5037323236465454] | Lr[5e-05]
+Step[18500] | Loss[0.4177304208278656] | Lr[5e-05]
+Step[19000] | Loss[0.5238059759140015] | Lr[5e-05]
+Step[19000] | Loss[0.6664619445800781] | Lr[5e-05]
+Step[19000] | Loss[0.8287811279296875] | Lr[5e-05]
+Step[19000] | Loss[0.6814171075820923] | Lr[5e-05]
+Step[19500] | Loss[0.7139764428138733] | Lr[5e-05]
+Step[19500] | Loss[1.1080671548843384] | Lr[5e-05]
+Step[19500] | Loss[0.5510810017585754] | Lr[5e-05]
+Step[19500] | Loss[0.5861247777938843] | Lr[5e-05]
+Step[20000] | Loss[0.46011024713516235] | Lr[5e-05]
+Step[20000] | Loss[0.6387186646461487] | Lr[5e-05]
+Step[20000] | Loss[1.067827820777893] | Lr[5e-05]
+Step[20000] | Loss[0.7073463797569275] | Lr[5e-05]
+Step[20500] | Loss[1.0906972885131836] | Lr[5e-05]
+Step[20500] | Loss[0.8757686614990234] | Lr[5e-05]
+Step[20500] | Loss[0.7509177923202515] | Lr[5e-05]
+Step[20500] | Loss[0.9353129863739014] | Lr[5e-05]
+Step[21000] | Loss[0.7855533957481384] | Lr[5e-05]
+Step[21000] | Loss[0.5175111889839172] | Lr[5e-05]
+Step[21000] | Loss[0.7768800854682922] | Lr[5e-05]Step[21000] | Loss[1.0084389448165894] | Lr[5e-05]
+
+Step[21500] | Loss[0.5420483350753784] | Lr[5e-05]
+Step[21500] | Loss[0.5847971439361572] | Lr[5e-05]
+Step[21500] | Loss[0.9060236215591431] | Lr[5e-05]
+Step[21500] | Loss[0.8093826770782471] | Lr[5e-05]
+Step[22000] | Loss[0.7991594672203064] | Lr[5e-05]
+Step[22000] | Loss[0.7867252230644226] | Lr[5e-05]
+Step[22000] | Loss[0.6806657910346985] | Lr[5e-05]
+Step[22000] | Loss[0.6165490746498108] | Lr[5e-05]
+Step[22500] | Loss[0.5781298279762268] | Lr[5e-05]
+Step[22500] | Loss[0.8426777720451355] | Lr[5e-05]
+Step[22500] | Loss[0.9641764163970947] | Lr[5e-05]
+Step[22500] | Loss[0.9857817888259888] | Lr[5e-05]
+Step[23000] | Loss[0.9960057735443115] | Lr[5e-05]
+Step[23000] | Loss[0.6880631446838379] | Lr[5e-05]
+Step[23000] | Loss[1.1740230321884155] | Lr[5e-05]
+Step[23000] | Loss[0.6857722997665405] | Lr[5e-05]
+Step[23500] | Loss[0.5785105228424072] | Lr[5e-05]
+Step[23500] | Loss[1.1577144861221313] | Lr[5e-05]
+Step[23500] | Loss[0.5112161636352539] | Lr[5e-05]
+Step[23500] | Loss[0.8417068123817444] | Lr[5e-05]
+Step[24000] | Loss[0.7845917344093323] | Lr[5e-05]
+Step[24000] | Loss[0.6574082374572754] | Lr[5e-05]Step[24000] | Loss[0.5697174072265625] | Lr[5e-05]
+
+Step[24000] | Loss[0.961841344833374] | Lr[5e-05]
+Step[24500] | Loss[0.7716911435127258] | Lr[5e-05]
+Step[24500] | Loss[1.2392290830612183] | Lr[5e-05]
+Step[24500] | Loss[1.0489764213562012] | Lr[5e-05]
+Step[24500] | Loss[0.6175155639648438] | Lr[5e-05]
+Step[25000] | Loss[0.8030855059623718] | Lr[5e-05]
+Step[25000] | Loss[0.7138310670852661] | Lr[5e-05]
+Step[25000] | Loss[0.6739989519119263] | Lr[5e-05]Step[25000] | Loss[0.5532971024513245] | Lr[5e-05]
+
+Step[25500] | Loss[0.6662638187408447] | Lr[5e-05]
+Step[25500] | Loss[0.6033205389976501] | Lr[5e-05]
+Step[25500] | Loss[0.5828821063041687] | Lr[5e-05]
+Step[25500] | Loss[0.95646071434021] | Lr[5e-05]
+Step[26000] | Loss[0.9089769124984741] | Lr[5e-05]
+Step[26000] | Loss[0.9989250302314758] | Lr[5e-05]
+Step[26000] | Loss[0.7143958210945129] | Lr[5e-05]
+Step[26000] | Loss[0.8039878010749817] | Lr[5e-05]
+Step[26500] | Loss[0.4998075067996979] | Lr[5e-05]
+Step[26500] | Loss[0.5089766383171082] | Lr[5e-05]
+Step[26500] | Loss[0.5641987919807434] | Lr[5e-05]
+Step[26500] | Loss[1.0702626705169678] | Lr[5e-05]
+Step[27000] | Loss[0.7423309683799744] | Lr[5e-05]
+Step[27000] | Loss[0.9718396663665771] | Lr[5e-05]
+Step[27000] | Loss[0.7665942311286926] | Lr[5e-05]
+Step[27000] | Loss[0.555198609828949] | Lr[5e-05]
+Step[27500] | Loss[0.5124795436859131] | Lr[5e-05]
+Step[27500] | Loss[0.6746135950088501] | Lr[5e-05]
+Step[27500] | Loss[0.8934081196784973] | Lr[5e-05]
+Step[27500] | Loss[0.9196509122848511] | Lr[5e-05]
+Step[28000] | Loss[0.6818103790283203] | Lr[5e-05]
+Step[28000] | Loss[0.7626176476478577] | Lr[5e-05]
+Step[28000] | Loss[0.6903412938117981] | Lr[5e-05]Step[28000] | Loss[0.6934987306594849] | Lr[5e-05]
+
+Step[28500] | Loss[1.0573961734771729] | Lr[5e-05]
+Step[28500] | Loss[0.7049993276596069] | Lr[5e-05]
+Step[28500] | Loss[0.5446446537971497] | Lr[5e-05]
+Step[28500] | Loss[0.4396398067474365] | Lr[5e-05]
+Step[29000] | Loss[0.46366363763809204] | Lr[5e-05]
+Step[29000] | Loss[0.8164713382720947] | Lr[5e-05]
+Step[29000] | Loss[0.5547642111778259] | Lr[5e-05]
+Step[29000] | Loss[0.8281616568565369] | Lr[5e-05]
+Step[29500] | Loss[0.8046182990074158] | Lr[5e-05]
+Step[29500] | Loss[0.7668987512588501] | Lr[5e-05]
+Step[29500] | Loss[0.6372296810150146] | Lr[5e-05]
+Step[29500] | Loss[0.7152304649353027] | Lr[5e-05]
+Step[30000] | Loss[0.49941638112068176] | Lr[5e-05]
+Step[30000] | Loss[0.8700287342071533] | Lr[5e-05]
+Step[30000] | Loss[1.2178034782409668] | Lr[5e-05]
+Step[30000] | Loss[0.7060889005661011] | Lr[5e-05]
+Step[30500] | Loss[1.11555814743042] | Lr[5e-05]
+Step[30500] | Loss[0.9261991381645203] | Lr[5e-05]
+Step[30500] | Loss[0.6693933010101318] | Lr[5e-05]
+Step[30500] | Loss[0.6468265056610107] | Lr[5e-05]
+Step[31000] | Loss[0.6715325117111206] | Lr[5e-05]
+Step[31000] | Loss[0.7037449479103088] | Lr[5e-05]
+Step[31000] | Loss[0.8098946213722229] | Lr[5e-05]
+Step[31000] | Loss[0.6070702075958252] | Lr[5e-05]
+Step[31500] | Loss[0.46898165345191956] | Lr[5e-05]
+Step[31500] | Loss[0.6093738079071045] | Lr[5e-05]
+Step[31500] | Loss[0.8389862179756165] | Lr[5e-05]Step[31500] | Loss[0.34327206015586853] | Lr[5e-05]
+
+Step[32000] | Loss[0.44786572456359863] | Lr[5e-05]
+Step[32000] | Loss[0.6649748086929321] | Lr[5e-05]
+Step[32000] | Loss[0.9770698547363281] | Lr[5e-05]
+Step[32000] | Loss[0.5689579844474792] | Lr[5e-05]
+Step[32500] | Loss[1.421359896659851] | Lr[5e-05]
+Step[32500] | Loss[0.7152444124221802] | Lr[5e-05]
+Step[32500] | Loss[0.567575216293335] | Lr[5e-05]
+Step[32500] | Loss[0.6513592600822449] | Lr[5e-05]
+Step[33000] | Loss[0.8907340168952942] | Lr[5e-05]
+Step[33000] | Loss[0.5960777401924133] | Lr[5e-05]
+Step[33000] | Loss[0.940410315990448] | Lr[5e-05]
+Step[33000] | Loss[1.2288877964019775] | Lr[5e-05]
+Step[33500] | Loss[0.47875064611434937] | Lr[5e-05]
+Step[33500] | Loss[0.8823789954185486] | Lr[5e-05]
+Step[33500] | Loss[0.8419401049613953] | Lr[5e-05]
+Step[33500] | Loss[0.6195400357246399] | Lr[5e-05]
+Step[34000] | Loss[0.7632054090499878] | Lr[5e-05]
+Step[34000] | Loss[0.7118626236915588] | Lr[5e-05]
+Step[34000] | Loss[0.9215307831764221] | Lr[5e-05]
+Step[34000] | Loss[0.8505599498748779] | Lr[5e-05]
+Step[34500] | Loss[0.44702842831611633] | Lr[5e-05]
+Step[34500] | Loss[0.5420034527778625] | Lr[5e-05]
+Step[34500] | Loss[0.5945257544517517] | Lr[5e-05]Step[34500] | Loss[0.6799342632293701] | Lr[5e-05]
+
+Step[35000] | Loss[0.8083982467651367] | Lr[5e-05]
+Step[35000] | Loss[0.7670587301254272] | Lr[5e-05]
+Step[35000] | Loss[0.9829590320587158] | Lr[5e-05]
+Step[35000] | Loss[0.889916718006134] | Lr[5e-05]
+Step[35500] | Loss[0.910127580165863] | Lr[5e-05]
+Step[35500] | Loss[0.7756975889205933] | Lr[5e-05]
+Step[35500] | Loss[0.6262505650520325] | Lr[5e-05]
+Step[35500] | Loss[0.8052612543106079] | Lr[5e-05]
+Step[36000] | Loss[0.9743312001228333] | Lr[5e-05]
+Step[36000] | Loss[0.8815666437149048] | Lr[5e-05]
+Step[36000] | Loss[0.5335450172424316] | Lr[5e-05]
+Step[36000] | Loss[0.838071346282959] | Lr[5e-05]
+Step[36500] | Loss[0.7126446962356567] | Lr[5e-05]
+Step[36500] | Loss[0.5261893272399902] | Lr[5e-05]Step[36500] | Loss[0.6575708389282227] | Lr[5e-05]
+
+Step[36500] | Loss[0.8139073252677917] | Lr[5e-05]
+Step[37000] | Loss[0.5167115330696106] | Lr[5e-05]
+Step[37000] | Loss[0.9277925491333008] | Lr[5e-05]
+Step[37000] | Loss[0.843462347984314] | Lr[5e-05]
+Step[37000] | Loss[0.6893662810325623] | Lr[5e-05]
+Step[37500] | Loss[0.8534899950027466] | Lr[5e-05]
+Step[37500] | Loss[0.761712372303009] | Lr[5e-05]
+Step[37500] | Loss[0.786349892616272] | Lr[5e-05]
+Step[37500] | Loss[0.8192421197891235] | Lr[5e-05]
+Step[38000] | Loss[0.7128535509109497] | Lr[5e-05]
+Step[38000] | Loss[0.9826817512512207] | Lr[5e-05]
+Step[38000] | Loss[0.8043404221534729] | Lr[5e-05]
+Step[38000] | Loss[0.6380627155303955] | Lr[5e-05]
+Step[38500] | Loss[0.5010621547698975] | Lr[5e-05]
+Step[38500] | Loss[0.5283035039901733] | Lr[5e-05]
+Step[38500] | Loss[0.6461926102638245] | Lr[5e-05]
+Step[38500] | Loss[0.7704758644104004] | Lr[5e-05]
+Step[39000] | Loss[0.7148804664611816] | Lr[5e-05]
+Step[39000] | Loss[0.87086021900177] | Lr[5e-05]
+Step[39000] | Loss[0.4445613622665405] | Lr[5e-05]
+Step[39000] | Loss[0.7493683695793152] | Lr[5e-05]
+Step[39500] | Loss[0.4847358763217926] | Lr[5e-05]
+Step[39500] | Loss[0.4195122718811035] | Lr[5e-05]
+Step[39500] | Loss[0.7676854133605957] | Lr[5e-05]Step[39500] | Loss[0.8142193555831909] | Lr[5e-05]
+
+Step[40000] | Loss[0.615112841129303] | Lr[5e-05]
+Step[40000] | Loss[1.0106213092803955] | Lr[5e-05]
+Step[40000] | Loss[0.5387775897979736] | Lr[5e-05]
+Step[40000] | Loss[0.9788623452186584] | Lr[5e-05]
+Step[40500] | Loss[0.7061440348625183] | Lr[5e-05]
+Step[40500] | Loss[1.0724138021469116] | Lr[5e-05]
+Step[40500] | Loss[0.8504176139831543] | Lr[5e-05]
+Step[40500] | Loss[0.4681513011455536] | Lr[5e-05]
+Step[41000] | Loss[0.7670426964759827] | Lr[5e-05]
+Step[41000] | Loss[0.7438223361968994] | Lr[5e-05]Step[41000] | Loss[0.7357150912284851] | Lr[5e-05]
+
+Step[41000] | Loss[0.8702020645141602] | Lr[5e-05]
+Step[41500] | Loss[0.5254407525062561] | Lr[5e-05]
+Step[41500] | Loss[0.3739461898803711] | Lr[5e-05]
+Step[41500] | Loss[0.7852664589881897] | Lr[5e-05]Step[41500] | Loss[0.9056186079978943] | Lr[5e-05]
+
+Step[42000] | Loss[0.6352407932281494] | Lr[5e-05]
+Step[42000] | Loss[0.7510483264923096] | Lr[5e-05]
+Step[42000] | Loss[0.786411464214325] | Lr[5e-05]
+Step[42000] | Loss[0.6801649928092957] | Lr[5e-05]
+Step[42500] | Loss[1.1296801567077637] | Lr[5e-05]
+Step[42500] | Loss[0.8419294953346252] | Lr[5e-05]
+Step[42500] | Loss[0.8676595687866211] | Lr[5e-05]Step[42500] | Loss[0.6779906153678894] | Lr[5e-05]
+
+Step[43000] | Loss[0.9504738450050354] | Lr[5e-05]
+Step[43000] | Loss[0.5983974933624268] | Lr[5e-05]
+Step[43000] | Loss[0.7422025203704834] | Lr[5e-05]
+Step[43000] | Loss[0.520847737789154] | Lr[5e-05]
+Step[43500] | Loss[0.46565788984298706] | Lr[5e-05]
+Step[43500] | Loss[0.9021016955375671] | Lr[5e-05]
+Step[43500] | Loss[0.5439326763153076] | Lr[5e-05]
+Step[43500] | Loss[0.606834352016449] | Lr[5e-05]
+Step[44000] | Loss[0.4908978343009949] | Lr[5e-05]
+Step[44000] | Loss[0.7027484178543091] | Lr[5e-05]
+Step[44000] | Loss[0.9235622882843018] | Lr[5e-05]
+Step[44000] | Loss[0.39657363295555115] | Lr[5e-05]
+Step[44500] | Loss[0.6609342694282532] | Lr[5e-05]
+Step[44500] | Loss[0.9636716842651367] | Lr[5e-05]
+Step[44500] | Loss[0.7636206746101379] | Lr[5e-05]
+Step[44500] | Loss[1.2149101495742798] | Lr[5e-05]
+Step[45000] | Loss[0.6820330619812012] | Lr[5e-05]
+Step[45000] | Loss[0.6569821238517761] | Lr[5e-05]
+Step[45000] | Loss[0.567499577999115] | Lr[5e-05]
+Step[45000] | Loss[0.6281681656837463] | Lr[5e-05]
+Step[45500] | Loss[0.5142954587936401] | Lr[5e-05]
+Step[45500] | Loss[0.5692986845970154] | Lr[5e-05]
+Step[45500] | Loss[0.8840289115905762] | Lr[5e-05]
+Step[45500] | Loss[0.6307332515716553] | Lr[5e-05]
+Step[46000] | Loss[1.1927242279052734] | Lr[5e-05]
+Step[46000] | Loss[1.0889075994491577] | Lr[5e-05]
+Step[46000] | Loss[0.8318667411804199] | Lr[5e-05]
+Step[46000] | Loss[0.5339668393135071] | Lr[5e-05]
+Step[46500] | Loss[0.7762064337730408] | Lr[5e-05]
+Step[46500] | Loss[0.849271833896637] | Lr[5e-05]
+Step[46500] | Loss[0.6712743043899536] | Lr[5e-05]
+Step[46500] | Loss[0.5997726917266846] | Lr[5e-05]
+Step[47000] | Loss[0.47962215542793274] | Lr[5e-05]
+Step[47000] | Loss[0.5577217936515808] | Lr[5e-05]Step[47000] | Loss[0.6971431374549866] | Lr[5e-05]
+
+Step[47000] | Loss[0.26757577061653137] | Lr[5e-05]
+Step[47500] | Loss[0.7242794632911682] | Lr[5e-05]
+Step[47500] | Loss[0.5887271165847778] | Lr[5e-05]
+Step[47500] | Loss[0.7812988758087158] | Lr[5e-05]Step[47500] | Loss[0.7777888774871826] | Lr[5e-05]
+
+Step[48000] | Loss[0.6289727687835693] | Lr[5e-05]
+Step[48000] | Loss[0.8301811218261719] | Lr[5e-05]
+Step[48000] | Loss[0.4090353548526764] | Lr[5e-05]
+Step[48000] | Loss[0.5979607701301575] | Lr[5e-05]
+Step[48500] | Loss[0.635464072227478] | Lr[5e-05]
+Step[48500] | Loss[0.5804245471954346] | Lr[5e-05]
+Step[48500] | Loss[1.1058775186538696] | Lr[5e-05]Step[48500] | Loss[0.6984764933586121] | Lr[5e-05]
+
+Step[49000] | Loss[0.877589225769043] | Lr[5e-05]
+Step[49000] | Loss[0.9185531139373779] | Lr[5e-05]
+Step[49000] | Loss[0.6025480031967163] | Lr[5e-05]
+Step[49000] | Loss[0.5711538791656494] | Lr[5e-05]
+Step[49500] | Loss[0.8282297253608704] | Lr[5e-05]
+Step[49500] | Loss[0.665581226348877] | Lr[5e-05]
+Step[49500] | Loss[0.5607256889343262] | Lr[5e-05]
+Step[49500] | Loss[0.47517257928848267] | Lr[5e-05]
+Step[50000] | Loss[1.1409052610397339] | Lr[5e-05]
+Step[50000] | Loss[0.5623408555984497] | Lr[5e-05]
+Step[50000] | Loss[0.6949067711830139] | Lr[5e-05]
+Step[50000] | Loss[0.6763215661048889] | Lr[5e-05]
+Step[50500] | Loss[0.6902463436126709] | Lr[5e-05]
+Step[50500] | Loss[0.9043850898742676] | Lr[5e-05]
+Step[50500] | Loss[0.8944095373153687] | Lr[5e-05]
+Step[50500] | Loss[0.7524831891059875] | Lr[5e-05]
+Step[51000] | Loss[0.8623576760292053] | Lr[5e-05]
+Step[51000] | Loss[0.6821044683456421] | Lr[5e-05]
+Step[51000] | Loss[0.5466456413269043] | Lr[5e-05]
+Step[51000] | Loss[0.8666114807128906] | Lr[5e-05]
+Step[51500] | Loss[0.5217552185058594] | Lr[5e-05]
+Step[51500] | Loss[0.5900119543075562] | Lr[5e-05]
+Step[51500] | Loss[0.8611282110214233] | Lr[5e-05]
+Step[51500] | Loss[0.7976826429367065] | Lr[5e-05]
+Step[52000] | Loss[1.0412131547927856] | Lr[5e-05]
+Step[52000] | Loss[0.9035110473632812] | Lr[5e-05]
+Step[52000] | Loss[0.3968762755393982] | Lr[5e-05]
+Step[52000] | Loss[0.5181312561035156] | Lr[5e-05]
+Step[52500] | Loss[0.5898159742355347] | Lr[5e-05]
+Step[52500] | Loss[0.7863587141036987] | Lr[5e-05]
+Step[52500] | Loss[0.9111504554748535] | Lr[5e-05]Step[52500] | Loss[0.5734996795654297] | Lr[5e-05]
+
+Step[53000] | Loss[0.7126193046569824] | Lr[5e-05]
+Step[53000] | Loss[0.8278046250343323] | Lr[5e-05]
+Step[53000] | Loss[1.0612808465957642] | Lr[5e-05]Step[53000] | Loss[0.7501479387283325] | Lr[5e-05]
+
+Step[53500] | Loss[0.656282901763916] | Lr[5e-05]
+Step[53500] | Loss[0.6420269012451172] | Lr[5e-05]
+Step[53500] | Loss[0.514064610004425] | Lr[5e-05]
+Step[53500] | Loss[0.5687057971954346] | Lr[5e-05]
+Step[54000] | Loss[0.8357142210006714] | Lr[5e-05]
+Step[54000] | Loss[0.6290056109428406] | Lr[5e-05]
+Step[54000] | Loss[0.28050941228866577] | Lr[5e-05]
+Step[54000] | Loss[0.5236127972602844] | Lr[5e-05]
+Step[54500] | Loss[0.9537186622619629] | Lr[5e-05]
+Step[54500] | Loss[0.7869272232055664] | Lr[5e-05]Step[54500] | Loss[0.7269574999809265] | Lr[5e-05]
+
+Step[54500] | Loss[0.6442391872406006] | Lr[5e-05]
+Step[55000] | Loss[0.9150980710983276] | Lr[5e-05]
+Step[55000] | Loss[0.982582151889801] | Lr[5e-05]
+Step[55000] | Loss[0.7707934975624084] | Lr[5e-05]
+Step[55000] | Loss[0.8157820105552673] | Lr[5e-05]
+Step[55500] | Loss[0.6024425625801086] | Lr[5e-05]
+Step[55500] | Loss[0.6601725220680237] | Lr[5e-05]
+Step[55500] | Loss[0.8143782615661621] | Lr[5e-05]
+Step[55500] | Loss[0.6652716398239136] | Lr[5e-05]
+Step[56000] | Loss[0.8158442974090576] | Lr[5e-05]
+Step[56000] | Loss[0.7638158202171326] | Lr[5e-05]
+Step[56000] | Loss[0.8037022352218628] | Lr[5e-05]
+Step[56000] | Loss[0.32334691286087036] | Lr[5e-05]
+Step[56500] | Loss[1.2270013093948364] | Lr[5e-05]
+Step[56500] | Loss[0.5920082330703735] | Lr[5e-05]Step[56500] | Loss[0.8191643953323364] | Lr[5e-05]
+
+Step[56500] | Loss[0.6028885841369629] | Lr[5e-05]
+Step[57000] | Loss[0.8680990934371948] | Lr[5e-05]
+Step[57000] | Loss[0.7384040355682373] | Lr[5e-05]
+Step[57000] | Loss[0.913202166557312] | Lr[5e-05]
+Step[57000] | Loss[0.6286061406135559] | Lr[5e-05]
+Step[57500] | Loss[0.8729702234268188] | Lr[5e-05]
+Step[57500] | Loss[0.45266202092170715] | Lr[5e-05]
+Step[57500] | Loss[0.7600245475769043] | Lr[5e-05]
+Step[57500] | Loss[0.7859832048416138] | Lr[5e-05]
+Step[58000] | Loss[0.5576106309890747] | Lr[5e-05]
+Step[58000] | Loss[0.41726845502853394] | Lr[5e-05]
+Step[58000] | Loss[0.8305869102478027] | Lr[5e-05]
+Step[58000] | Loss[0.9308130741119385] | Lr[5e-05]
+Step[58500] | Loss[0.7343130111694336] | Lr[5e-05]
+Step[58500] | Loss[0.6116142272949219] | Lr[5e-05]
+Step[58500] | Loss[0.8376680612564087] | Lr[5e-05]
+Step[58500] | Loss[0.6189523339271545] | Lr[5e-05]
+Step[59000] | Loss[0.5879552364349365] | Lr[5e-05]
+Step[59000] | Loss[0.8226426243782043] | Lr[5e-05]
+Step[59000] | Loss[0.677651047706604] | Lr[5e-05]Step[59000] | Loss[0.8159929513931274] | Lr[5e-05]
+
+Step[59500] | Loss[0.777553915977478] | Lr[5e-05]
+Step[59500] | Loss[0.664743959903717] | Lr[5e-05]
+Step[59500] | Loss[0.7919697165489197] | Lr[5e-05]Step[59500] | Loss[0.8671277761459351] | Lr[5e-05]
+
+Step[60000] | Loss[0.6949455738067627] | Lr[5e-05]
+Step[60000] | Loss[0.7971217036247253] | Lr[5e-05]Step[60000] | Loss[0.7070292234420776] | Lr[5e-05]
+
+Step[60000] | Loss[0.5062417984008789] | Lr[5e-05]
+Step[60500] | Loss[0.6250240802764893] | Lr[5e-05]
+Step[60500] | Loss[0.6154565811157227] | Lr[5e-05]
+Step[60500] | Loss[0.6295384764671326] | Lr[5e-05]
+Step[60500] | Loss[0.6776108741760254] | Lr[5e-05]
+Step[61000] | Loss[0.9366045594215393] | Lr[5e-05]
+Step[61000] | Loss[0.6203767657279968] | Lr[5e-05]
+Step[61000] | Loss[0.839229166507721] | Lr[5e-05]
+Step[61000] | Loss[0.6004250049591064] | Lr[5e-05]
+Step[61500] | Loss[0.4999866783618927] | Lr[5e-05]
+Step[61500] | Loss[0.5127641558647156] | Lr[5e-05]Step[61500] | Loss[0.6541284322738647] | Lr[5e-05]
+
+Step[61500] | Loss[0.9086626768112183] | Lr[5e-05]
+Step[62000] | Loss[0.5936118960380554] | Lr[5e-05]
+Step[62000] | Loss[0.8168808221817017] | Lr[5e-05]
+Step[62000] | Loss[0.5078043341636658] | Lr[5e-05]
+Step[62000] | Loss[1.1071038246154785] | Lr[5e-05]
+Step[62500] | Loss[0.5339328646659851] | Lr[5e-05]
+Step[62500] | Loss[0.8618579506874084] | Lr[5e-05]
+Step[62500] | Loss[0.41294604539871216] | Lr[5e-05]Step[62500] | Loss[1.294363260269165] | Lr[5e-05]
+
+Step[63000] | Loss[0.8635348677635193] | Lr[5e-05]
+Step[63000] | Loss[0.7799083590507507] | Lr[5e-05]
+Step[63000] | Loss[0.8251156210899353] | Lr[5e-05]
+Step[63000] | Loss[0.6310031414031982] | Lr[5e-05]
+Step[63500] | Loss[0.6138036847114563] | Lr[5e-05]
+Step[63500] | Loss[0.6945693492889404] | Lr[5e-05]
+Step[63500] | Loss[0.47380074858665466] | Lr[5e-05]Step[63500] | Loss[0.6000512838363647] | Lr[5e-05]
+
+Step[64000] | Loss[0.6118230819702148] | Lr[5e-05]
+Step[64000] | Loss[0.7004356384277344] | Lr[5e-05]
+Step[64000] | Loss[1.1895407438278198] | Lr[5e-05]
+Step[64000] | Loss[0.4999622702598572] | Lr[5e-05]
+Step[64500] | Loss[0.47813814878463745] | Lr[5e-05]
+Step[64500] | Loss[0.8958776593208313] | Lr[5e-05]
+Step[64500] | Loss[1.1319986581802368] | Lr[5e-05]Step[64500] | Loss[0.7261412143707275] | Lr[5e-05]
+
+Step[65000] | Loss[1.2322938442230225] | Lr[5e-05]
+Step[65000] | Loss[0.7751504778862] | Lr[5e-05]
+Step[65000] | Loss[0.686911940574646] | Lr[5e-05]
+Step[65000] | Loss[0.5832200050354004] | Lr[5e-05]
+Step[65500] | Loss[0.9772564768791199] | Lr[5e-05]
+Step[65500] | Loss[0.6286408305168152] | Lr[5e-05]
+Step[65500] | Loss[0.7998400926589966] | Lr[5e-05]
+Step[65500] | Loss[1.0059813261032104] | Lr[5e-05]
+Step[66000] | Loss[0.8074768781661987] | Lr[5e-05]
+Step[66000] | Loss[0.6206996440887451] | Lr[5e-05]
+Step[66000] | Loss[0.6618362665176392] | Lr[5e-05]
+Step[66000] | Loss[0.6481223702430725] | Lr[5e-05]
+Step[66500] | Loss[0.6075240969657898] | Lr[5e-05]
+Step[66500] | Loss[0.6784480810165405] | Lr[5e-05]
+Step[66500] | Loss[0.7345530390739441] | Lr[5e-05]
+Step[66500] | Loss[0.50264972448349] | Lr[5e-05]
+Step[67000] | Loss[0.8934365510940552] | Lr[5e-05]
+Step[67000] | Loss[0.7904040813446045] | Lr[5e-05]Step[67000] | Loss[0.7058272957801819] | Lr[5e-05]
+
+Step[67000] | Loss[0.8827147483825684] | Lr[5e-05]
+Step[67500] | Loss[0.6757193207740784] | Lr[5e-05]
+Step[67500] | Loss[0.9067693948745728] | Lr[5e-05]
+Step[67500] | Loss[0.8483999967575073] | Lr[5e-05]
+Step[67500] | Loss[0.6908371448516846] | Lr[5e-05]
+Step[68000] | Loss[0.7267861366271973] | Lr[5e-05]
+Step[68000] | Loss[0.9510089755058289] | Lr[5e-05]
+Step[68000] | Loss[0.36296698451042175] | Lr[5e-05]
+Step[68000] | Loss[0.9580762386322021] | Lr[5e-05]
+Step[68500] | Loss[0.9902706146240234] | Lr[5e-05]
+Step[68500] | Loss[0.8531345129013062] | Lr[5e-05]
+Step[68500] | Loss[1.4063305854797363] | Lr[5e-05]Step[68500] | Loss[0.6628609895706177] | Lr[5e-05]
+
+Step[69000] | Loss[0.8144828677177429] | Lr[5e-05]
+Step[69000] | Loss[0.8627644181251526] | Lr[5e-05]
+Step[69000] | Loss[0.4962524175643921] | Lr[5e-05]
+Step[69000] | Loss[0.7547104358673096] | Lr[5e-05]
+Step[69500] | Loss[0.8065305948257446] | Lr[5e-05]
+Step[69500] | Loss[0.5906994938850403] | Lr[5e-05]
+Step[69500] | Loss[0.7473128437995911] | Lr[5e-05]
+Step[69500] | Loss[1.0700902938842773] | Lr[5e-05]
+Step[70000] | Loss[0.6203271746635437] | Lr[5e-05]
+Step[70000] | Loss[0.6042137742042542] | Lr[5e-05]
+Step[70000] | Loss[0.4540141522884369] | Lr[5e-05]
+Step[70000] | Loss[0.8093584179878235] | Lr[5e-05]
+Step[70500] | Loss[0.361956387758255] | Lr[5e-05]
+Step[70500] | Loss[0.5679839849472046] | Lr[5e-05]
+Step[70500] | Loss[0.6576650738716125] | Lr[5e-05]
+Step[70500] | Loss[0.7334207892417908] | Lr[5e-05]
+Step[71000] | Loss[0.8180915117263794] | Lr[5e-05]
+Step[71000] | Loss[0.7034265995025635] | Lr[5e-05]
+Step[71000] | Loss[0.798701286315918] | Lr[5e-05]Step[71000] | Loss[0.7301178574562073] | Lr[5e-05]
+
+Step[71500] | Loss[1.131722092628479] | Lr[5e-05]
+Step[71500] | Loss[0.5625724196434021] | Lr[5e-05]Step[71500] | Loss[1.013385534286499] | Lr[5e-05]
+
+Step[71500] | Loss[0.7489970326423645] | Lr[5e-05]
+Step[72000] | Loss[0.5361236333847046] | Lr[5e-05]
+Step[72000] | Loss[0.5732631683349609] | Lr[5e-05]
+Step[72000] | Loss[0.6669636368751526] | Lr[5e-05]
+Step[72000] | Loss[0.4679315388202667] | Lr[5e-05]
+Step[72500] | Loss[0.828965961933136] | Lr[5e-05]
+Step[72500] | Loss[0.5875324010848999] | Lr[5e-05]
+Step[72500] | Loss[0.9534621834754944] | Lr[5e-05]
+Step[72500] | Loss[0.5683984160423279] | Lr[5e-05]
+Step[73000] | Loss[0.7756955623626709] | Lr[5e-05]
+Step[73000] | Loss[0.5963971614837646] | Lr[5e-05]
+Step[73000] | Loss[0.6721923351287842] | Lr[5e-05]
+Step[73000] | Loss[0.8567265272140503] | Lr[5e-05]
+Step[73500] | Loss[0.6296647191047668] | Lr[5e-05]
+Step[73500] | Loss[0.4432298541069031] | Lr[5e-05]
+Step[73500] | Loss[0.6375566720962524] | Lr[5e-05]
+Step[73500] | Loss[0.8211926221847534] | Lr[5e-05]
+Step[74000] | Loss[0.6413825154304504] | Lr[5e-05]
+Step[74000] | Loss[0.5484899282455444] | Lr[5e-05]
+Step[74000] | Loss[1.1054725646972656] | Lr[5e-05]
+Step[74000] | Loss[0.7908053994178772] | Lr[5e-05]
+Step[74500] | Loss[0.5427201986312866] | Lr[5e-05]
+Step[74500] | Loss[0.6549081802368164] | Lr[5e-05]
+Step[74500] | Loss[0.5366185903549194] | Lr[5e-05]
+Step[74500] | Loss[0.5018222332000732] | Lr[5e-05]
+Step[75000] | Loss[0.8795108199119568] | Lr[5e-05]
+Step[75000] | Loss[0.4948718845844269] | Lr[5e-05]
+Step[75000] | Loss[0.5071179866790771] | Lr[5e-05]
+Step[75000] | Loss[0.9004130363464355] | Lr[5e-05]
+Step[75500] | Loss[0.9262655973434448] | Lr[5e-05]
+Step[75500] | Loss[0.9438169002532959] | Lr[5e-05]Step[75500] | Loss[0.9210843443870544] | Lr[5e-05]
+
+Step[75500] | Loss[0.985435426235199] | Lr[5e-05]
+Step[76000] | Loss[0.7147269248962402] | Lr[5e-05]
+Step[76000] | Loss[0.6003396511077881] | Lr[5e-05]
+Step[76000] | Loss[0.6724826693534851] | Lr[5e-05]
+Step[76000] | Loss[0.7975733280181885] | Lr[5e-05]
+Step[76500] | Loss[0.5684840679168701] | Lr[5e-05]
+Step[76500] | Loss[1.0494234561920166] | Lr[5e-05]Step[76500] | Loss[0.9890897870063782] | Lr[5e-05]
+
+Step[76500] | Loss[0.7749049067497253] | Lr[5e-05]
+Step[77000] | Loss[0.7304568290710449] | Lr[5e-05]
+Step[77000] | Loss[0.5546592473983765] | Lr[5e-05]
+Step[77000] | Loss[0.683230459690094] | Lr[5e-05]
+Step[77000] | Loss[0.8363390564918518] | Lr[5e-05]
+Step[77500] | Loss[0.6461948156356812] | Lr[5e-05]
+Step[77500] | Loss[0.4096836447715759] | Lr[5e-05]
+Step[77500] | Loss[0.5679081678390503] | Lr[5e-05]
+Step[77500] | Loss[1.1125937700271606] | Lr[5e-05]
+Step[78000] | Loss[0.5186818242073059] | Lr[5e-05]
+Step[78000] | Loss[0.584490954875946] | Lr[5e-05]
+Step[78000] | Loss[0.3726300001144409] | Lr[5e-05]
+Step[78000] | Loss[0.6385586857795715] | Lr[5e-05]
+Labels:  tensor([3, 1, 1, 4, 0, 2, 4, 1, 3, 0, 2, 3, 2, 2, 4, 4], device='cuda:0')
+Labels:  Labels:  tensor([2, 2, 1, 1, 1, 4, 4, 4, 3, 2, 0, 3, 3, 4, 0, 3], device='cuda:0')
+Preds:  tensor([0, 4, 2, 3, 0, 1, 2, 2, 3, 2, 2, 4, 4, 1, 1, 2], device='cuda:1')
+Preds:  tensor([3, 1, 1, 4, 0, 2, 4, 1, 2, 0, 1, 4, 1, 2, 4, 4], device='cuda:0')
+Preds:  tensor([0, 4, 1, 4, 0, 2, 4, 2, 1, 2, 0, 4, 4, 1, 1, 4], device='cuda:1')
+tensor([4, 3, 2, 1, 0, 4, 4, 4, 2, 2, 1, 2, 4, 4, 0, 3], device='cuda:0')
+Outputs:  Labels:  tensor([3, 0, 0, 1, 0, 3, 0, 0, 3, 1, 4, 4, 4, 1, 2, 0], device='cuda:1')
+Preds:  tensor([3, 0, 2, 1, 0, 2, 0, 1, 3, 1, 0, 2, 4, 1, 2, 0], device='cuda:1')
+Outputs:  Outputs:  tensor([[    0.0002,     0.0007,     0.0277,     0.4322,     0.5392],
+        [    0.0004,     0.0031,     0.0628,     0.8041,     0.1297],
+        [    0.0124,     0.0762,     0.5001,     0.3358,     0.0755],
+        [    0.0949,     0.4975,     0.3801,     0.0264,     0.0011],
+        [    0.6612,     0.3163,     0.0217,     0.0005,     0.0003],
+        [    0.0002,     0.0003,     0.0057,     0.1182,     0.8756],
+        [    0.0009,     0.0003,     0.0027,     0.0560,     0.9400],
+        [    0.0025,     0.0027,     0.0160,     0.1302,     0.8485],
+        [    0.0094,     0.0593,     0.6898,     0.2040,     0.0374],
+        [    0.0057,     0.0839,     0.5617,     0.3346,     0.0139],
+        [    0.0386,     0.5210,     0.3844,     0.0447,     0.0114],
+        [    0.0029,     0.1266,     0.5285,     0.2567,     0.0853],
+        [    0.0002,     0.0013,     0.0156,     0.3516,     0.6313],
+        [    0.0001,     0.0006,     0.0021,     0.1285,     0.8686],
+        [    0.9396,     0.0594,     0.0010,     0.0000,     0.0000],
+        [    0.0000,     0.0001,     0.0270,     0.8755,     0.0974]],
+       device='cuda:0')
+Metric:  tensor(0.5000, device='cuda:0')
+------------------------
+Outputs:  tensor([[    0.0004,     0.0011,     0.0366,     0.5727,     0.3892],
+        [    0.7017,     0.2556,     0.0359,     0.0025,     0.0044],
+        [    0.1911,     0.3601,     0.4029,     0.0390,     0.0070],
+        [    0.2163,     0.5771,     0.2014,     0.0045,     0.0007],
+        [    0.8087,     0.1660,     0.0251,     0.0002,     0.0000],
+        [    0.0944,     0.3684,     0.4774,     0.0530,     0.0068],
+        [    0.8966,     0.0977,     0.0057,     0.0000,     0.0000],
+        [    0.2578,     0.6989,     0.0407,     0.0022,     0.0005],
+        [    0.0000,     0.0016,     0.1606,     0.7416,     0.0962],
+        [    0.1577,     0.5844,     0.2477,     0.0091,     0.0010],
+        [    0.2756,     0.1727,     0.2729,     0.1116,     0.1671],
+        [    0.1134,     0.1016,     0.3810,     0.2518,     0.1522],
+        [    0.0005,     0.0004,     0.0049,     0.1764,     0.8178],
+        [    0.2291,     0.5394,     0.1327,     0.0563,     0.0426],
+        [    0.0073,     0.1846,     0.7465,     0.0577,     0.0039],
+        [    0.9892,     0.0107,     0.0001,     0.0000,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0.6875, device='cuda:1')
+------------------------
+tensor([[    0.0001,     0.0028,     0.0307,     0.9658,     0.0006],
+        [    0.4415,     0.4904,     0.0667,     0.0010,     0.0003],
+        [    0.3490,     0.4554,     0.1816,     0.0120,     0.0020],
+        [    0.0015,     0.0006,     0.0042,     0.0748,     0.9188],
+        [    0.5573,     0.1555,     0.1217,     0.0670,     0.0985],
+        [    0.0030,     0.1608,     0.7032,     0.1304,     0.0026],
+        [    0.0060,     0.0030,     0.0143,     0.1839,     0.7928],
+        [    0.4073,     0.5467,     0.0458,     0.0001,     0.0000],
+        [    0.0002,     0.0046,     0.5008,     0.4751,     0.0193],
+        [    0.5301,     0.2459,     0.1884,     0.0351,     0.0006],
+        [    0.1176,     0.5312,     0.3432,     0.0071,     0.0009],
+        [    0.0004,     0.0003,     0.0038,     0.2129,     0.7826],
+        [    0.0405,     0.6691,     0.2880,     0.0024,     0.0000],
+        [    0.0484,     0.2608,     0.4943,     0.1467,     0.0498],
+        [    0.0002,     0.0004,     0.0169,     0.4417,     0.5408],
+        [    0.0004,     0.0003,     0.0030,     0.1172,     0.8791]],
+       device='cuda:0')
+Metric:  tensor(0.7500, device='cuda:0')
+------------------------
+tensor([[    0.5910,     0.3958,     0.0131,     0.0001,     0.0001],
+        [    0.0006,     0.0003,     0.0014,     0.0856,     0.9121],
+        [    0.0164,     0.7001,     0.1900,     0.0718,     0.0217],
+        [    0.0001,     0.0000,     0.0002,     0.0203,     0.9794],
+        [    0.9959,     0.0036,     0.0003,     0.0000,     0.0002],
+        [    0.0767,     0.3306,     0.4481,     0.1352,     0.0093],
+        [    0.0029,     0.0159,     0.0755,     0.3369,     0.5688],
+        [    0.0012,     0.0278,     0.5996,     0.3614,     0.0100],
+        [    0.1256,     0.5087,     0.3441,     0.0207,     0.0010],
+        [    0.0071,     0.0846,     0.5692,     0.3078,     0.0314],
+        [    0.6584,     0.2712,     0.0620,     0.0036,     0.0048],
+        [    0.0002,     0.0002,     0.0032,     0.1303,     0.8661],
+        [    0.0004,     0.0001,     0.0002,     0.0024,     0.9968],
+        [    0.0096,     0.5409,     0.3872,     0.0548,     0.0075],
+        [    0.0008,     0.9980,     0.0008,     0.0003,     0.0001],
+        [    0.0377,     0.0224,     0.0545,     0.2528,     0.6326]],
+       device='cuda:1')
+Metric:  tensor(0.5625, device='cuda:1')
+------------------------
+Labels:  tensor([2, 0, 4, 4, 4, 0, 0, 2, 4, 0, 4, 0, 0, 0, 1, 2], device='cuda:1')
+Preds:  tensor([3, 0, 4, 4, 4, 0, 0, 2, 3, 1, 3, 4, 0, 0, 2, 4], device='cuda:1')
+Outputs:  tensor([[    0.0524,     0.0958,     0.3616,     0.4005,     0.0897],
+        [    0.5153,     0.4322,     0.0496,     0.0019,     0.0011],
+        [    0.0002,     0.0007,     0.0003,     0.0170,     0.9818],
+        [    0.0002,     0.0001,     0.0008,     0.0803,     0.9186],
+        [    0.0010,     0.0014,     0.0140,     0.2660,     0.7176],
+        [    0.6376,     0.2889,     0.0676,     0.0041,     0.0019],
+        [    0.7350,     0.2102,     0.0481,     0.0054,     0.0014],
+        [    0.0475,     0.3078,     0.6242,     0.0201,     0.0004],
+        [    0.0009,     0.0078,     0.1423,     0.5484,     0.3007],
+        [    0.0629,     0.4894,     0.4339,     0.0130,     0.0009],
+        [    0.0014,     0.0011,     0.0204,     0.6165,     0.3605],
+        [    0.0918,     0.0870,     0.1267,     0.1659,     0.5286],
+        [    0.5943,     0.3881,     0.0164,     0.0003,     0.0010],
+        [    0.8861,     0.1123,     0.0015,     0.0000,     0.0000],
+        [    0.0120,     0.2729,     0.6822,     0.0326,     0.0003],
+        [    0.1068,     0.1443,     0.2619,     0.1607,     0.3263]],
+       device='cuda:1')
+Metric:  tensor(0.5625, device='cuda:1')
+------------------------
+Labels:  tensor([0, 1, 4, 2, 3, 2, 1, 0, 2, 2, 2, 0, 2, 4, 3, 4], device='cuda:0')
+Preds:  tensor([0, 1, 4, 1, 0, 2, 1, 0, 1, 3, 3, 0, 2, 4, 0, 4], device='cuda:0')
+Outputs:  tensor([[    0.5074,     0.4742,     0.0183,     0.0001,     0.0000],
+        [    0.1093,     0.8666,     0.0237,     0.0003,     0.0000],
+        [    0.0006,     0.0012,     0.0200,     0.2923,     0.6859],
+        [    0.3465,     0.5289,     0.1217,     0.0026,     0.0003],
+        [    0.5885,     0.2778,     0.1211,     0.0097,     0.0029],
+        [    0.0110,     0.0200,     0.9436,     0.0192,     0.0062],
+        [    0.1276,     0.4700,     0.3947,     0.0073,     0.0004],
+        [    0.9342,     0.0619,     0.0035,     0.0002,     0.0003],
+        [    0.3598,     0.4106,     0.2037,     0.0183,     0.0075],
+        [    0.0005,     0.0046,     0.1586,     0.5952,     0.2411],
+        [    0.0023,     0.0289,     0.3443,     0.5411,     0.0834],
+        [    0.9520,     0.0468,     0.0011,     0.0001,     0.0000],
+        [    0.0021,     0.0442,     0.5028,     0.4409,     0.0101],
+        [    0.0004,     0.0006,     0.0107,     0.2164,     0.7718],
+        [    0.4773,     0.4150,     0.1063,     0.0012,     0.0002],
+        [    0.0003,     0.0006,     0.0004,     0.0192,     0.9796]],
+       device='cuda:0')
+Metric:  tensor(0.6250, device='cuda:0')
+------------------------
+Labels:  tensor([1, 1, 1, 1, 2, 1, 0, 0, 4, 4, 2, 1, 3, 0, 0, 1], device='cuda:0')
+Preds:  tensor([3, 2, 2, 4, 1, 2, 0, 0, 4, 4, 2, 1, 3, 0, 0, 1], device='cuda:0')
+Outputs:  tensor([[    0.0027,     0.0292,     0.3770,     0.4708,     0.1204],
+        [    0.2689,     0.3329,     0.3593,     0.0351,     0.0039],
+        [    0.0492,     0.4547,     0.4682,     0.0262,     0.0016],
+        [    0.2262,     0.1289,     0.1694,     0.2204,     0.2552],
+        [    0.0210,     0.4561,     0.4407,     0.0729,     0.0093],
+        [    0.0545,     0.3519,     0.5052,     0.0646,     0.0238],
+        [    0.9290,     0.0572,     0.0099,     0.0012,     0.0027],
+        [    0.8573,     0.1391,     0.0034,     0.0001,     0.0001],
+        [    0.0015,     0.0008,     0.0048,     0.1570,     0.8359],
+        [    0.0005,     0.0002,     0.0012,     0.0444,     0.9538],
+        [    0.0095,     0.2004,     0.7341,     0.0553,     0.0007],
+        [    0.3067,     0.5193,     0.1603,     0.0089,     0.0048],
+        [    0.0001,     0.0021,     0.1478,     0.8495,     0.0004],
+        [    0.5216,     0.4455,     0.0319,     0.0010,     0.0000],
+        [    0.7048,     0.1906,     0.0604,     0.0175,     0.0267],
+        [    0.1740,     0.5960,     0.2244,     0.0052,     0.0004]],
+       device='cuda:0')
+Metric:  tensor(0.6250, device='cuda:0')
+------------------------
+Labels:  tensor([3, 2, 3, 1, 3, 4, 3, 0, 3, 1, 1, 0, 0, 3, 2, 0], device='cuda:1')
+Preds:  tensor([3, 2, 3, 0, 2, 4, 3, 1, 4, 1, 1, 0, 0, 2, 2, 2], device='cuda:1')
+Outputs:  tensor([[    0.0024,     0.0186,     0.3383,     0.6160,     0.0247],
+        [    0.0012,     0.0380,     0.6267,     0.3190,     0.0152],
+        [    0.0021,     0.0360,     0.2560,     0.6824,     0.0235],
+        [    0.4860,     0.4495,     0.0636,     0.0008,     0.0002],
+        [    0.0048,     0.1364,     0.8316,     0.0260,     0.0011],
+        [    0.0005,     0.0006,     0.0079,     0.1930,     0.7980],
+        [    0.0100,     0.0608,     0.3574,     0.4336,     0.1382],
+        [    0.1522,     0.5984,     0.2452,     0.0041,     0.0001],
+        [    0.0000,     0.0001,     0.0047,     0.3171,     0.6780],
+        [    0.0450,     0.8257,     0.1094,     0.0169,     0.0030],
+        [    0.1383,     0.5325,     0.3173,     0.0109,     0.0010],
+        [    0.9221,     0.0698,     0.0075,     0.0003,     0.0003],
+        [    0.6650,     0.2893,     0.0433,     0.0020,     0.0004],
+        [    0.0059,     0.0817,     0.4559,     0.4212,     0.0352],
+        [    0.0998,     0.3444,     0.4086,     0.1167,     0.0305],
+        [    0.0401,     0.2347,     0.5493,     0.1696,     0.0063]],
+       device='cuda:1')
+Metric:  tensor(0.6250, device='cuda:1')
+------------------------
+Labels:  tensor([2, 3, 4, 0, 1, 3, 4, 3, 4, 2, 1, 0, 4, 4, 4, 4], device='cuda:1')
+Preds:  tensor([2, 3, 4, 1, 1, 4, 4, 2, 4, 2, 0, 0, 4, 4, 3, 4], device='cuda:1')
+Outputs:  tensor([[    0.0252,     0.4439,     0.5187,     0.0118,     0.0005],
+        [    0.0001,     0.0012,     0.0747,     0.7458,     0.1781],
+        [    0.0019,     0.0006,     0.0014,     0.0153,     0.9808],
+        [    0.2204,     0.7109,     0.0664,     0.0015,     0.0007],
+        [    0.1728,     0.3541,     0.3287,     0.1089,     0.0355],
+        [    0.0045,     0.0059,     0.0454,     0.3051,     0.6390],
+        [    0.0029,     0.0007,     0.0029,     0.0243,     0.9692],
+        [    0.0062,     0.3676,     0.6013,     0.0242,     0.0007],
+        [    0.0002,     0.0004,     0.0001,     0.0040,     0.9954],
+        [    0.0013,     0.0424,     0.7810,     0.1691,     0.0063],
+        [    0.5182,     0.4358,     0.0447,     0.0009,     0.0004],
+        [    0.5959,     0.3624,     0.0409,     0.0006,     0.0001],
+        [    0.0002,     0.0002,     0.0027,     0.1329,     0.8641],
+        [    0.0016,     0.0014,     0.0114,     0.2131,     0.7724],
+        [    0.0030,     0.0108,     0.1636,     0.5195,     0.3030],
+        [    0.0005,     0.0004,     0.0034,     0.1568,     0.8390]],
+       device='cuda:1')
+Metric:  tensor(0.6875, device='cuda:1')
+------------------------
+Labels:  tensor([3, 3, 3, 2, 1, 3, 1, 1, 2, 2, 0, 3, 3, 4, 4, 2], device='cuda:0')
+Preds:  tensor([3, 2, 2, 2, 1, 2, 1, 0, 2, 2, 0, 4, 2, 4, 4, 0], device='cuda:0')
+Outputs:  tensor([[    0.0001,     0.0007,     0.0283,     0.6532,     0.3178],
+        [    0.0018,     0.0276,     0.8021,     0.1562,     0.0123],
+        [    0.0020,     0.0323,     0.6283,     0.3214,     0.0160],
+        [    0.0364,     0.2044,     0.6001,     0.1544,     0.0047],
+        [    0.2797,     0.6448,     0.0736,     0.0015,     0.0004],
+        [    0.0695,     0.1694,     0.4744,     0.2373,     0.0493],
+        [    0.2034,     0.7167,     0.0790,     0.0009,     0.0001],
+        [    0.9890,     0.0107,     0.0003,     0.0000,     0.0000],
+        [    0.0009,     0.0204,     0.5532,     0.3993,     0.0262],
+        [    0.0681,     0.2963,     0.4107,     0.1937,     0.0311],
+        [    0.6048,     0.3531,     0.0418,     0.0003,     0.0000],
+        [    0.0001,     0.0001,     0.0003,     0.0110,     0.9885],
+        [    0.0021,     0.0640,     0.7217,     0.2066,     0.0056],
+        [    0.0002,     0.0003,     0.0079,     0.3172,     0.6744],
+        [    0.0052,     0.0064,     0.0562,     0.2691,     0.6631],
+        [    0.7069,     0.2678,     0.0234,     0.0011,     0.0008]],
+       device='cuda:0')
+Metric:  tensor(0.5625, device='cuda:0')
+------------------------
+Labels:  tensor([4, 0, 4, 0, 4, 1, 1, 3, 0, 4, 4, 3, 0, 2, 3, 0], device='cuda:0')
+Preds:  tensor([4, 0, 4, 0, 4, 1, 1, 4, 0, 4, 4, 3, 1, 1, 4, 0], device='cuda:0')
+Outputs:  tensor([[    0.0007,     0.0005,     0.0052,     0.1320,     0.8616],
+        [    0.7522,     0.2113,     0.0353,     0.0010,     0.0002],
+        [    0.0005,     0.0006,     0.0103,     0.2980,     0.6907],
+        [    0.7749,     0.2149,     0.0099,     0.0001,     0.0001],
+        [    0.0286,     0.0212,     0.0698,     0.1980,     0.6825],
+        [    0.0022,     0.9844,     0.0118,     0.0014,     0.0002],
+        [    0.1071,     0.5801,     0.3053,     0.0069,     0.0005],
+        [    0.0346,     0.2053,     0.1549,     0.1592,     0.4461],
+        [    0.9861,     0.0135,     0.0004,     0.0000,     0.0000],
+        [    0.0037,     0.0158,     0.1893,     0.3814,     0.4099],
+        [    0.0004,     0.0168,     0.0076,     0.2303,     0.7449],
+        [    0.0026,     0.0290,     0.4341,     0.4553,     0.0790],
+        [    0.1617,     0.7807,     0.0572,     0.0003,     0.0000],
+        [    0.1173,     0.5300,     0.3126,     0.0380,     0.0021],
+        [    0.0002,     0.0003,     0.0062,     0.3311,     0.6622],
+        [    0.9246,     0.0690,     0.0063,     0.0001,     0.0000]],
+       device='cuda:0')
+Metric:  tensor(0.7500, device='cuda:0')
+------------------------
+Labels:  tensor([3, 2, 3, 2, 3, 0, 2, 4, 1, 1, 1, 1, 0, 0, 0, 0], device='cuda:1')
+Preds:  tensor([4, 2, 2, 2, 4, 0, 1, 4, 2, 0, 1, 2, 0, 0, 0, 0], device='cuda:1')
+Outputs:  tensor([[    0.0012,     0.0017,     0.0186,     0.2182,     0.7603],
+        [    0.0736,     0.2644,     0.5482,     0.1081,     0.0058],
+        [    0.0011,     0.0399,     0.8794,     0.0790,     0.0007],
+        [    0.0015,     0.0159,     0.9649,     0.0168,     0.0008],
+        [    0.0004,     0.0005,     0.0059,     0.2323,     0.7609],
+        [    0.6549,     0.3344,     0.0105,     0.0002,     0.0001],
+        [    0.2887,     0.4550,     0.2290,     0.0229,     0.0044],
+        [    0.0034,     0.0019,     0.0089,     0.1297,     0.8561],
+        [    0.0153,     0.3747,     0.5182,     0.0841,     0.0077],
+        [    0.7745,     0.0848,     0.0378,     0.0250,     0.0779],
+        [    0.2011,     0.6313,     0.1651,     0.0024,     0.0001],
+        [    0.2922,     0.2451,     0.4207,     0.0350,     0.0070],
+        [    0.9778,     0.0151,     0.0052,     0.0007,     0.0013],
+        [    0.6770,     0.2885,     0.0325,     0.0012,     0.0008],
+        [    0.9869,     0.0129,     0.0002,     0.0000,     0.0000],
+        [    0.9993,     0.0006,     0.0001,     0.0000,     0.0000]],
+       device='cuda:1')
+Metric:  tensor(0.5625, device='cuda:1')
+------------------------
+Labels:  tensor([4, 4, 4, 2, 3, 2, 4, 1, 2, 1, 1, 2, 0, 1, 0, 1], device='cuda:1')
+Preds:  tensor([4, 4, 4, 1, 2, 3, 4, 1, 2, 2, 1, 2, 0, 0, 0, 2], device='cuda:1')
+Outputs:  tensor([[    0.0003,     0.0007,     0.0129,     0.1621,     0.8240],
+        [    0.0004,     0.0003,     0.0054,     0.1811,     0.8129],
+        [    0.0002,     0.0002,     0.0014,     0.0428,     0.9554],
+        [    0.1604,     0.5038,     0.3300,     0.0057,     0.0002],
+        [    0.0065,     0.0506,     0.6072,     0.2830,     0.0526],
+        [    0.0009,     0.0076,     0.1552,     0.6937,     0.1425],
+        [    0.0007,     0.0003,     0.0013,     0.0129,     0.9848],
+        [    0.0747,     0.4412,     0.4138,     0.0659,     0.0045],
+        [    0.0017,     0.0868,     0.8596,     0.0512,     0.0007],
+        [    0.0271,     0.3190,     0.5733,     0.0791,     0.0014],
+        [    0.2883,     0.3714,     0.2806,     0.0548,     0.0049],
+        [    0.0055,     0.2312,     0.7422,     0.0208,     0.0004],
+        [    0.9935,     0.0065,     0.0000,     0.0000,     0.0000],
+        [    0.6274,     0.3407,     0.0311,     0.0007,     0.0001],
+        [    0.7730,     0.2201,     0.0068,     0.0001,     0.0001],
+        [    0.0082,     0.1370,     0.6657,     0.1857,     0.0033]],
+       device='cuda:1')
+Metric:  tensor(0.6250, device='cuda:1')
+------------------------
+Labels:  tensor([4, 1, 1, 0, 0, 1, 2, 4, 2, 4, 4, 1, 0, 1, 2, 1], device='cuda:0')
+Preds:  tensor([4, 1, 0, 0, 0, 1, 2, 4, 1, 4, 4, 4, 0, 0, 2, 0], device='cuda:0')
+Outputs:  tensor([[    0.0015,     0.0014,     0.0071,     0.1474,     0.8427],
+        [    0.2362,     0.6212,     0.1384,     0.0034,     0.0007],
+        [    0.9213,     0.0761,     0.0025,     0.0000,     0.0000],
+        [    0.8085,     0.1772,     0.0137,     0.0003,     0.0002],
+        [    0.6570,     0.3233,     0.0193,     0.0004,     0.0001],
+        [    0.0728,     0.7265,     0.1999,     0.0007,     0.0000],
+        [    0.0434,     0.2861,     0.4998,     0.1483,     0.0224],
+        [    0.0000,     0.0001,     0.0005,     0.1813,     0.8181],
+        [    0.0369,     0.4901,     0.4624,     0.0106,     0.0000],
+        [    0.0006,     0.0006,     0.0052,     0.2873,     0.7063],
+        [    0.0458,     0.0344,     0.0949,     0.1151,     0.7099],
+        [    0.2899,     0.1112,     0.1273,     0.1237,     0.3479],
+        [    0.9090,     0.0899,     0.0011,     0.0000,     0.0000],
+        [    0.5547,     0.3334,     0.1040,     0.0063,     0.0016],
+        [    0.2286,     0.2929,     0.3132,     0.1122,     0.0531],
+        [    0.5789,     0.3384,     0.0771,     0.0043,     0.0012]],
+       device='cuda:0')
+Metric:  tensor(0.6875, device='cuda:0')
+------------------------
+Labels:  tensor([2, 0, 1, 3, 4, 2, 0, 0, 2, 1, 0, 1, 1, 2, 3, 4], device='cuda:0')
+Preds:  tensor([4, 0, 2, 2, 4, 2, 1, 0, 1, 0, 0, 0, 0, 1, 4, 4], device='cuda:0')
+Outputs:  tensor([[    0.0003,     0.0003,     0.0039,     0.1436,     0.8519],
+        [    0.7870,     0.1767,     0.0337,     0.0019,     0.0007],
+        [    0.0058,     0.1477,     0.7791,     0.0671,     0.0003],
+        [    0.0025,     0.0934,     0.8592,     0.0443,     0.0005],
+        [    0.0030,     0.0013,     0.0044,     0.0394,     0.9520],
+        [    0.0057,     0.2319,     0.6179,     0.1399,     0.0046],
+        [    0.3030,     0.5485,     0.1446,     0.0038,     0.0001],
+        [    0.8446,     0.1313,     0.0235,     0.0005,     0.0001],
+        [    0.0493,     0.7362,     0.1619,     0.0403,     0.0124],
+        [    0.5314,     0.3405,     0.1017,     0.0130,     0.0135],
+        [    0.9944,     0.0055,     0.0001,     0.0000,     0.0000],
+        [    0.5964,     0.2777,     0.1180,     0.0078,     0.0002],
+        [    0.6443,     0.2196,     0.1167,     0.0140,     0.0054],
+        [    0.0145,     0.7618,     0.1749,     0.0404,     0.0085],
+        [    0.0096,     0.0211,     0.1160,     0.3120,     0.5412],
+        [    0.0001,     0.0001,     0.0002,     0.0373,     0.9623]],
+       device='cuda:0')
+Metric:  tensor(0.3750, device='cuda:0')
+------------------------
+Labels:  tensor([1, 1, 2, 1, 1, 4, 1, 4, 4, 1, 3, 2, 4, 3, 3, 4], device='cuda:1')
+Preds:  tensor([2, 2, 2, 0, 1, 4, 0, 3, 4, 1, 2, 2, 4, 2, 4, 4], device='cuda:1')
+Outputs:  tensor([[    0.0290,     0.1452,     0.4819,     0.2583,     0.0857],
+        [    0.0657,     0.3588,     0.4904,     0.0815,     0.0037],
+        [    0.0731,     0.3660,     0.4924,     0.0676,     0.0009],
+        [    0.5311,     0.3585,     0.1082,     0.0020,     0.0003],
+        [    0.2908,     0.6147,     0.0936,     0.0008,     0.0001],
+        [    0.0081,     0.0081,     0.0137,     0.0920,     0.8781],
+        [    0.5674,     0.3975,     0.0342,     0.0007,     0.0002],
+        [    0.0000,     0.0001,     0.0089,     0.6823,     0.3087],
+        [    0.0009,     0.0006,     0.0016,     0.0628,     0.9341],
+        [    0.2291,     0.6722,     0.0964,     0.0021,     0.0001],
+        [    0.0092,     0.1140,     0.7183,     0.1581,     0.0004],
+        [    0.0016,     0.1238,     0.6351,     0.2304,     0.0091],
+        [    0.0004,     0.0008,     0.0101,     0.3013,     0.6874],
+        [    0.0012,     0.0408,     0.7780,     0.1734,     0.0065],
+        [    0.0021,     0.0014,     0.0124,     0.1344,     0.8497],
+        [    0.0003,     0.0011,     0.0241,     0.3680,     0.6065]],
+       device='cuda:1')
+Metric:  tensor(0.5000, device='cuda:1')
+------------------------
+Labels:  tensor([4, 4, 2, 0, 0, 4, 4, 1, 4, 2, 0, 1, 1, 2, 2, 1], device='cuda:1')
+Preds:  tensor([4, 4, 1, 3, 0, 4, 4, 1, 4, 2, 3, 1, 2, 1, 2, 2], device='cuda:1')
+Outputs:  tensor([[    0.0018,     0.0009,     0.0065,     0.1074,     0.8834],
+        [    0.0013,     0.0011,     0.0041,     0.0949,     0.8987],
+        [    0.2047,     0.6800,     0.1108,     0.0041,     0.0004],
+        [    0.0016,     0.0059,     0.0897,     0.4561,     0.4467],
+        [    0.3988,     0.2166,     0.2521,     0.0733,     0.0593],
+        [    0.0010,     0.0005,     0.0020,     0.0497,     0.9468],
+        [    0.0017,     0.0013,     0.0085,     0.1646,     0.8239],
+        [    0.1593,     0.6935,     0.1434,     0.0035,     0.0003],
+        [    0.0004,     0.0008,     0.0186,     0.2381,     0.7422],
+        [    0.0861,     0.2468,     0.5205,     0.1340,     0.0127],
+        [    0.0018,     0.0216,     0.3047,     0.6107,     0.0612],
+        [    0.2963,     0.4224,     0.2125,     0.0501,     0.0187],
+        [    0.0043,     0.0824,     0.8384,     0.0717,     0.0033],
+        [    0.1403,     0.5380,     0.2948,     0.0252,     0.0016],
+        [    0.0284,     0.2150,     0.4635,     0.2388,     0.0544],
+        [    0.0140,     0.3419,     0.6037,     0.0386,     0.0018]],
+       device='cuda:1')
+Metric:  tensor(0.6250, device='cuda:1')
+------------------------
+Mean loss[0.9315869401378595] | Mean metric[0.5923621278672523]
+Stupid loss[0.0] | Naive soulution metric[0.2]
+EPOCH 1
+--------------
+Labels:  tensor([1, 1, 2, 4, 2, 4, 0, 2, 3, 2, 0, 1, 1, 3, 2, 0], device='cuda:0')
+Preds:  tensor([1, 2, 2, 4, 0, 4, 0, 4, 4, 2, 1, 2, 0, 3, 4, 1], device='cuda:0')
+Outputs:  tensor([[    0.1516,     0.5267,     0.3186,     0.0028,     0.0003],
+        [    0.0628,     0.2565,     0.4052,     0.1778,     0.0977],
+        [    0.0001,     0.0032,     0.9955,     0.0013,     0.0000],
+        [    0.0001,     0.0002,     0.0003,     0.0582,     0.9413],
+        [    0.5609,     0.3080,     0.1182,     0.0110,     0.0019],
+        [    0.0004,     0.0002,     0.0005,     0.0170,     0.9819],
+        [    0.9734,     0.0263,     0.0002,     0.0000,     0.0001],
+        [    0.0003,     0.0002,     0.0023,     0.0938,     0.9034],
+        [    0.0001,     0.0001,     0.0046,     0.3549,     0.6403],
+        [    0.0483,     0.4561,     0.4881,     0.0073,     0.0001],
+        [    0.3494,     0.3677,     0.2167,     0.0635,     0.0027],
+        [    0.0131,     0.1660,     0.6642,     0.1505,     0.0062],
+        [    0.8108,     0.1393,     0.0287,     0.0056,     0.0156],
+        [    0.0017,     0.0026,     0.0324,     0.5460,     0.4172],
+        [    0.0082,     0.0024,     0.0071,     0.0314,     0.9509],
+        [    0.0725,     0.6062,     0.3078,     0.0133,     0.0002]],
+       device='cuda:0')
+Metric:  tensor(0.4375, device='cuda:0')
+------------------------
+Mean loss[0.9331044855933471] | Mean metric[0.5967850170815032]
+Stupid loss[0.0] | Naive soulution metric[0.2]
+EPOCH 1
+--------------
+Labels:  tensor([4, 2, 2, 0, 0, 3, 3, 0, 0, 0, 0, 1, 4, 2, 0, 4], device='cuda:0')
+Preds:  tensor([4, 4, 2, 0, 1, 3, 3, 1, 0, 0, 4, 0, 3, 2, 0, 4], device='cuda:0')
+Outputs:  tensor([[    0.0001,     0.0010,     0.0021,     0.1230,     0.8738],
+        [    0.0018,     0.0030,     0.0244,     0.2415,     0.7292],
+        [    0.1201,     0.3656,     0.4200,     0.0867,     0.0076],
+        [    0.9655,     0.0338,     0.0008,     0.0000,     0.0000],
+        [    0.4263,     0.5522,     0.0207,     0.0004,     0.0004],
+        [    0.0001,     0.0001,     0.0011,     0.9930,     0.0057],
+        [    0.0001,     0.0023,     0.2015,     0.7400,     0.0561],
+        [    0.3134,     0.5504,     0.0924,     0.0129,     0.0309],
+        [    0.9261,     0.0730,     0.0009,     0.0000,     0.0000],
+        [    0.7888,     0.2004,     0.0103,     0.0002,     0.0003],
+        [    0.1172,     0.2065,     0.0535,     0.1364,     0.4863],
+        [    0.5925,     0.3952,     0.0119,     0.0003,     0.0002],
+        [    0.0014,     0.0048,     0.0301,     0.7474,     0.2164],
+        [    0.1883,     0.2986,     0.3902,     0.0766,     0.0463],
+        [    0.7895,     0.1818,     0.0242,     0.0024,     0.0021],
+        [    0.0000,     0.0002,     0.0013,     0.1214,     0.8770]],
+       device='cuda:0')
+Metric:  tensor(0.6250, device='cuda:0')
+------------------------
+Mean loss[0.9342590550523435] | Mean metric[0.5935822352367008]
+Stupid loss[0.0] | Naive soulution metric[0.2]
+Labels:  tensor([0, 4, 0, 3, 0, 1, 2, 1, 4, 2, 1, 1, 4, 3, 1, 3], device='cuda:1')
+Preds:  tensor([1, 4, 0, 3, 0, 0, 1, 2, 2, 2, 2, 2, 4, 3, 1, 2], device='cuda:1')
+Outputs:  tensor([[    0.4375,     0.5407,     0.0179,     0.0007,     0.0032],
+        [    0.0019,     0.0037,     0.0189,     0.1489,     0.8266],
+        [    0.8503,     0.1351,     0.0123,     0.0016,     0.0008],
+        [    0.0000,     0.0019,     0.0426,     0.5976,     0.3579],
+        [    0.7594,     0.2378,     0.0028,     0.0000,     0.0000],
+        [    0.6993,     0.2682,     0.0308,     0.0015,     0.0002],
+        [    0.1508,     0.4250,     0.3010,     0.0784,     0.0448],
+        [    0.0301,     0.4113,     0.5408,     0.0162,     0.0017],
+        [    0.1183,     0.1974,     0.4186,     0.2261,     0.0396],
+        [    0.0018,     0.0358,     0.5453,     0.3844,     0.0328],
+        [    0.0317,     0.4683,     0.4715,     0.0252,     0.0034],
+        [    0.0199,     0.1810,     0.7177,     0.0777,     0.0036],
+        [    0.0002,     0.0002,     0.0027,     0.2288,     0.7681],
+        [    0.0000,     0.0004,     0.0840,     0.8568,     0.0587],
+        [    0.1265,     0.5154,     0.3306,     0.0220,     0.0055],
+        [    0.0087,     0.2894,     0.3111,     0.2787,     0.1122]],
+       device='cuda:1')
+Metric:  tensor(0.5000, device='cuda:1')
+------------------------
+Mean loss[0.9259531545807758] | Mean metric[0.5950158613958029]
+Stupid loss[0.0] | Naive soulution metric[0.2]
+EPOCH 1
+--------------
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertModel: ['cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.seq_relationship.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+EPOCH 1
+--------------
+Step[500] | Loss[0.7884932160377502] | Lr[1e-05]
+Step[500] | Loss[0.9034154415130615] | Lr[1e-05]
+Step[500] | Loss[0.7715844511985779] | Lr[1e-05]
+Step[500] | Loss[0.5786350965499878] | Lr[1e-05]
+Step[1000] | Loss[0.732349157333374] | Lr[1e-05]
+Step[1000] | Loss[0.4113786220550537] | Lr[1e-05]
+Step[1000] | Loss[0.6560148000717163] | Lr[1e-05]
+Step[1000] | Loss[0.5225640535354614] | Lr[1e-05]
+Step[1500] | Loss[0.4676813781261444] | Lr[1e-05]
+Step[1500] | Loss[1.305641770362854] | Lr[1e-05]
+Step[1500] | Loss[0.6704544425010681] | Lr[1e-05]
+Step[1500] | Loss[1.1196168661117554] | Lr[1e-05]
+Step[2000] | Loss[0.5921791195869446] | Lr[1e-05]
+Step[2000] | Loss[0.5758904814720154] | Lr[1e-05]
+Step[2000] | Loss[0.6989774703979492] | Lr[1e-05]
+Step[2000] | Loss[0.9262741804122925] | Lr[1e-05]
+Step[2500] | Loss[1.2947676181793213] | Lr[1e-05]
+Step[2500] | Loss[1.0742772817611694] | Lr[1e-05]
+Step[2500] | Loss[0.701921284198761] | Lr[1e-05]Step[2500] | Loss[0.7239640951156616] | Lr[1e-05]
+
+Step[3000] | Loss[0.4090156555175781] | Lr[1e-05]
+Step[3000] | Loss[0.714164137840271] | Lr[1e-05]
+Step[3000] | Loss[0.6772465705871582] | Lr[1e-05]Step[3000] | Loss[0.6833334565162659] | Lr[1e-05]
+
+Step[3500] | Loss[0.4425666034221649] | Lr[1e-05]
+Step[3500] | Loss[0.4141588807106018] | Lr[1e-05]
+Step[3500] | Loss[0.5208361148834229] | Lr[1e-05]
+Step[3500] | Loss[0.7287524342536926] | Lr[1e-05]
+Step[4000] | Loss[0.8365141749382019] | Lr[1e-05]
+Step[4000] | Loss[0.4106609523296356] | Lr[1e-05]
+Step[4000] | Loss[0.6235979199409485] | Lr[1e-05]
+Step[4000] | Loss[0.7460707426071167] | Lr[1e-05]
+Step[4500] | Loss[0.9684845805168152] | Lr[1e-05]
+Step[4500] | Loss[0.7627082467079163] | Lr[1e-05]
+Step[4500] | Loss[0.5604124069213867] | Lr[1e-05]
+Step[4500] | Loss[0.6502571702003479] | Lr[1e-05]
+Step[5000] | Loss[0.7476866245269775] | Lr[1e-05]
+Step[5000] | Loss[0.5906329154968262] | Lr[1e-05]
+Step[5000] | Loss[1.0347486734390259] | Lr[1e-05]
+Step[5000] | Loss[0.9550938010215759] | Lr[1e-05]
+Step[5500] | Loss[1.0844738483428955] | Lr[1e-05]
+Step[5500] | Loss[0.7841641306877136] | Lr[1e-05]
+Step[5500] | Loss[0.6325145959854126] | Lr[1e-05]
+Step[5500] | Loss[0.6748647093772888] | Lr[1e-05]
+Step[6000] | Loss[0.49906930327415466] | Lr[1e-05]
+Step[6000] | Loss[0.7083763480186462] | Lr[1e-05]
+Step[6000] | Loss[0.6309785842895508] | Lr[1e-05]
+Step[6000] | Loss[0.678862452507019] | Lr[1e-05]
+Step[6500] | Loss[0.7666810154914856] | Lr[1e-05]
+Step[6500] | Loss[0.5842552781105042] | Lr[1e-05]
+Step[6500] | Loss[0.8571447134017944] | Lr[1e-05]
+Step[6500] | Loss[1.1544182300567627] | Lr[1e-05]
+Step[7000] | Loss[1.2079617977142334] | Lr[1e-05]
+Step[7000] | Loss[0.72771155834198] | Lr[1e-05]
+Step[7000] | Loss[0.8743556141853333] | Lr[1e-05]
+Step[7000] | Loss[0.5050457715988159] | Lr[1e-05]
+Step[7500] | Loss[0.44121360778808594] | Lr[1e-05]
+Step[7500] | Loss[1.0046741962432861] | Lr[1e-05]
+Step[7500] | Loss[0.8321483135223389] | Lr[1e-05]
+Step[7500] | Loss[0.7798315286636353] | Lr[1e-05]
+Step[8000] | Loss[0.7133322954177856] | Lr[1e-05]
+Step[8000] | Loss[0.657619059085846] | Lr[1e-05]
+Step[8000] | Loss[0.5300925970077515] | Lr[1e-05]Step[8000] | Loss[0.5546327233314514] | Lr[1e-05]
+
+Step[8500] | Loss[0.862406313419342] | Lr[1e-05]
+Step[8500] | Loss[0.5426702499389648] | Lr[1e-05]
+Step[8500] | Loss[0.7464886903762817] | Lr[1e-05]
+Step[8500] | Loss[0.37164077162742615] | Lr[1e-05]
+Step[9000] | Loss[0.5506536960601807] | Lr[1e-05]
+Step[9000] | Loss[0.9128963947296143] | Lr[1e-05]Step[9000] | Loss[1.0046061277389526] | Lr[1e-05]
+
+Step[9000] | Loss[0.6537557244300842] | Lr[1e-05]
+Step[9500] | Loss[0.3847576379776001] | Lr[1e-05]
+Step[9500] | Loss[0.475221186876297] | Lr[1e-05]
+Step[9500] | Loss[0.7101186513900757] | Lr[1e-05]
+Step[9500] | Loss[0.44634827971458435] | Lr[1e-05]
+Step[10000] | Loss[0.6519138216972351] | Lr[1e-05]
+Step[10000] | Loss[0.5512136816978455] | Lr[1e-05]
+Step[10000] | Loss[0.3877909779548645] | Lr[1e-05]
+Step[10000] | Loss[0.5337436199188232] | Lr[1e-05]
+Step[10500] | Loss[0.49268585443496704] | Lr[1e-05]
+Step[10500] | Loss[0.42760035395622253] | Lr[1e-05]
+Step[10500] | Loss[0.9418521523475647] | Lr[1e-05]
+Step[10500] | Loss[0.7807391881942749] | Lr[1e-05]
+Step[11000] | Loss[0.516573429107666] | Lr[1e-05]
+Step[11000] | Loss[0.9216907024383545] | Lr[1e-05]
+Step[11000] | Loss[0.580708920955658] | Lr[1e-05]
+Step[11000] | Loss[0.6813783645629883] | Lr[1e-05]
+Step[11500] | Loss[0.6966395974159241] | Lr[1e-05]
+Step[11500] | Loss[0.7781826853752136] | Lr[1e-05]
+Step[11500] | Loss[0.6188969016075134] | Lr[1e-05]
+Step[11500] | Loss[0.9546524882316589] | Lr[1e-05]
+Step[12000] | Loss[0.624262809753418] | Lr[1e-05]
+Step[12000] | Loss[0.6425114274024963] | Lr[1e-05]
+Step[12000] | Loss[0.44156861305236816] | Lr[1e-05]Step[12000] | Loss[0.8019605278968811] | Lr[1e-05]
+
+Step[12500] | Loss[0.7026828527450562] | Lr[1e-05]
+Step[12500] | Loss[0.7840170860290527] | Lr[1e-05]
+Step[12500] | Loss[0.6684369444847107] | Lr[1e-05]
+Step[12500] | Loss[0.5944050550460815] | Lr[1e-05]
+Step[13000] | Loss[1.3610012531280518] | Lr[1e-05]
+Step[13000] | Loss[0.9265549182891846] | Lr[1e-05]
+Step[13000] | Loss[0.7490049600601196] | Lr[1e-05]
+Step[13000] | Loss[0.5778043270111084] | Lr[1e-05]
+Step[13500] | Loss[0.5286779999732971] | Lr[1e-05]
+Step[13500] | Loss[0.4871053099632263] | Lr[1e-05]
+Step[13500] | Loss[0.615545928478241] | Lr[1e-05]
+Step[13500] | Loss[0.8296779990196228] | Lr[1e-05]
+Step[14000] | Loss[0.692482590675354] | Lr[1e-05]
+Step[14000] | Loss[0.8153855204582214] | Lr[1e-05]
+Step[14000] | Loss[1.0196300745010376] | Lr[1e-05]
+Step[14000] | Loss[0.6874907612800598] | Lr[1e-05]
+Step[14500] | Loss[0.551684558391571] | Lr[1e-05]
+Step[14500] | Loss[0.9548158049583435] | Lr[1e-05]
+Step[14500] | Loss[0.5842795968055725] | Lr[1e-05]
+Step[14500] | Loss[0.7989774942398071] | Lr[1e-05]
+Step[15000] | Loss[0.8816442489624023] | Lr[1e-05]
+Step[15000] | Loss[0.7092751860618591] | Lr[1e-05]
+Step[15000] | Loss[0.4968400299549103] | Lr[1e-05]
+Step[15000] | Loss[1.0192519426345825] | Lr[1e-05]
+Step[15500] | Loss[0.9439134001731873] | Lr[1e-05]
+Step[15500] | Loss[0.8823927044868469] | Lr[1e-05]
+Step[15500] | Loss[1.047828197479248] | Lr[1e-05]
+Step[15500] | Loss[1.0392444133758545] | Lr[1e-05]
+Step[16000] | Loss[0.8667706251144409] | Lr[1e-05]
+Step[16000] | Loss[0.602935791015625] | Lr[1e-05]
+Step[16000] | Loss[0.4776533544063568] | Lr[1e-05]
+Step[16000] | Loss[0.37651553750038147] | Lr[1e-05]
+Step[16500] | Loss[0.6612175703048706] | Lr[1e-05]
+Step[16500] | Loss[0.653668999671936] | Lr[1e-05]
+Step[16500] | Loss[0.6792150735855103] | Lr[1e-05]
+Step[16500] | Loss[0.8245266079902649] | Lr[1e-05]
+Step[17000] | Loss[0.9536113142967224] | Lr[1e-05]
+Step[17000] | Loss[0.8214393258094788] | Lr[1e-05]
+Step[17000] | Loss[0.7604599595069885] | Lr[1e-05]
+Step[17000] | Loss[0.6175485253334045] | Lr[1e-05]
+Step[17500] | Loss[0.7553843855857849] | Lr[1e-05]
+Step[17500] | Loss[0.8114352226257324] | Lr[1e-05]
+Step[17500] | Loss[1.076602816581726] | Lr[1e-05]
+Step[17500] | Loss[1.0728799104690552] | Lr[1e-05]
+Step[18000] | Loss[0.7420294284820557] | Lr[1e-05]
+Step[18000] | Loss[0.9558670520782471] | Lr[1e-05]
+Step[18000] | Loss[0.7143338918685913] | Lr[1e-05]
+Step[18000] | Loss[0.816670298576355] | Lr[1e-05]
+Step[18500] | Loss[0.7244954705238342] | Lr[1e-05]
+Step[18500] | Loss[0.7438854575157166] | Lr[1e-05]
+Step[18500] | Loss[0.7098113298416138] | Lr[1e-05]
+Step[18500] | Loss[0.4964025616645813] | Lr[1e-05]
+Step[19000] | Loss[0.7226740717887878] | Lr[1e-05]
+Step[19000] | Loss[0.4936678111553192] | Lr[1e-05]
+Step[19000] | Loss[0.7128880620002747] | Lr[1e-05]Step[19000] | Loss[0.7211753129959106] | Lr[1e-05]
+
+Step[19500] | Loss[0.46145740151405334] | Lr[1e-05]
+Step[19500] | Loss[0.4512080252170563] | Lr[1e-05]
+Step[19500] | Loss[0.4030647277832031] | Lr[1e-05]
+Step[19500] | Loss[0.5045809149742126] | Lr[1e-05]
+Step[20000] | Loss[0.617318868637085] | Lr[1e-05]
+Step[20000] | Loss[0.4656374454498291] | Lr[1e-05]
+Step[20000] | Loss[0.802665650844574] | Lr[1e-05]
+Step[20000] | Loss[0.5719186067581177] | Lr[1e-05]
+Step[20500] | Loss[0.9627016186714172] | Lr[1e-05]
+Step[20500] | Loss[1.0562999248504639] | Lr[1e-05]
+Step[20500] | Loss[0.40191808342933655] | Lr[1e-05]Step[20500] | Loss[1.1156494617462158] | Lr[1e-05]
+
+Step[21000] | Loss[0.4631611406803131] | Lr[1e-05]
+Step[21000] | Loss[0.4702110290527344] | Lr[1e-05]
+Step[21000] | Loss[0.4703088700771332] | Lr[1e-05]
+Step[21000] | Loss[0.8831219673156738] | Lr[1e-05]
+Step[21500] | Loss[1.1855968236923218] | Lr[1e-05]
+Step[21500] | Loss[0.8651796579360962] | Lr[1e-05]
+Step[21500] | Loss[0.7578297853469849] | Lr[1e-05]Step[21500] | Loss[0.6906400322914124] | Lr[1e-05]
+
+Step[22000] | Loss[0.7204060554504395] | Lr[1e-05]
+Step[22000] | Loss[0.7036809325218201] | Lr[1e-05]
+Step[22000] | Loss[0.45081666111946106] | Lr[1e-05]
+Step[22000] | Loss[0.8681051135063171] | Lr[1e-05]
+Step[22500] | Loss[0.6915721893310547] | Lr[1e-05]
+Step[22500] | Loss[1.1439247131347656] | Lr[1e-05]
+Step[22500] | Loss[0.612433910369873] | Lr[1e-05]
+Step[22500] | Loss[0.7766722440719604] | Lr[1e-05]
+Step[23000] | Loss[0.873216986656189] | Lr[1e-05]
+Step[23000] | Loss[0.4772670865058899] | Lr[1e-05]
+Step[23000] | Loss[0.34882819652557373] | Lr[1e-05]
+Step[23000] | Loss[0.6065565347671509] | Lr[1e-05]
+Step[23500] | Loss[1.175229787826538] | Lr[1e-05]
+Step[23500] | Loss[0.5614442229270935] | Lr[1e-05]
+Step[23500] | Loss[0.6543481349945068] | Lr[1e-05]Step[23500] | Loss[0.6749367713928223] | Lr[1e-05]
+
+Step[24000] | Loss[0.6733142733573914] | Lr[1e-05]
+Step[24000] | Loss[0.7643294334411621] | Lr[1e-05]
+Step[24000] | Loss[0.504641056060791] | Lr[1e-05]
+Step[24000] | Loss[0.7433498501777649] | Lr[1e-05]
+Step[24500] | Loss[0.526202917098999] | Lr[1e-05]
+Step[24500] | Loss[0.6230534911155701] | Lr[1e-05]
+Step[24500] | Loss[0.7883241176605225] | Lr[1e-05]
+Step[24500] | Loss[0.4436570107936859] | Lr[1e-05]
+Step[25000] | Loss[0.643519937992096] | Lr[1e-05]
+Step[25000] | Loss[0.5883423089981079] | Lr[1e-05]Step[25000] | Loss[0.4797710180282593] | Lr[1e-05]
+
+Step[25000] | Loss[0.7255866527557373] | Lr[1e-05]
+Step[25500] | Loss[0.8463861346244812] | Lr[1e-05]
+Step[25500] | Loss[0.6192269921302795] | Lr[1e-05]
+Step[25500] | Loss[0.7003836631774902] | Lr[1e-05]
+Step[25500] | Loss[0.8625489473342896] | Lr[1e-05]
+Step[26000] | Loss[0.6767178773880005] | Lr[1e-05]
+Step[26000] | Loss[0.46052491664886475] | Lr[1e-05]
+Step[26000] | Loss[0.6774669885635376] | Lr[1e-05]
+Step[26000] | Loss[0.5639529824256897] | Lr[1e-05]
+Step[26500] | Loss[0.5711758732795715] | Lr[1e-05]
+Step[26500] | Loss[0.26077497005462646] | Lr[1e-05]
+Step[26500] | Loss[0.5882821083068848] | Lr[1e-05]
+Step[26500] | Loss[0.3850991725921631] | Lr[1e-05]
+Step[27000] | Loss[0.9150926470756531] | Lr[1e-05]
+Step[27000] | Loss[0.9519321918487549] | Lr[1e-05]
+Step[27000] | Loss[0.4552771747112274] | Lr[1e-05]
+Step[27000] | Loss[0.7917044758796692] | Lr[1e-05]
+Step[27500] | Loss[0.7123295068740845] | Lr[1e-05]
+Step[27500] | Loss[0.5436058044433594] | Lr[1e-05]
+Step[27500] | Loss[1.0041321516036987] | Lr[1e-05]
+Step[27500] | Loss[0.4986265003681183] | Lr[1e-05]
+Step[28000] | Loss[0.6138100028038025] | Lr[1e-05]
+Step[28000] | Loss[0.8055115938186646] | Lr[1e-05]
+Step[28000] | Loss[0.592322051525116] | Lr[1e-05]
+Step[28000] | Loss[0.9464455842971802] | Lr[1e-05]
+Step[28500] | Loss[0.6069053411483765] | Lr[1e-05]
+Step[28500] | Loss[0.6327033042907715] | Lr[1e-05]
+Step[28500] | Loss[0.8733329176902771] | Lr[1e-05]
+Step[28500] | Loss[0.4108709990978241] | Lr[1e-05]
+Step[29000] | Loss[0.528373658657074] | Lr[1e-05]
+Step[29000] | Loss[0.5494384765625] | Lr[1e-05]
+Step[29000] | Loss[0.6633918285369873] | Lr[1e-05]
+Step[29000] | Loss[0.4905020296573639] | Lr[1e-05]
+Step[29500] | Loss[0.6450944542884827] | Lr[1e-05]
+Step[29500] | Loss[0.61799556016922] | Lr[1e-05]
+Step[29500] | Loss[0.48226186633110046] | Lr[1e-05]
+Step[29500] | Loss[1.0313059091567993] | Lr[1e-05]
+Step[30000] | Loss[0.7034085392951965] | Lr[1e-05]
+Step[30000] | Loss[0.6727277040481567] | Lr[1e-05]
+Step[30000] | Loss[0.6440319418907166] | Lr[1e-05]
+Step[30000] | Loss[1.006156325340271] | Lr[1e-05]
+Step[30500] | Loss[0.7112557888031006] | Lr[1e-05]
+Step[30500] | Loss[0.8129984736442566] | Lr[1e-05]
+Step[30500] | Loss[0.9381439089775085] | Lr[1e-05]
+Step[30500] | Loss[0.6399496793746948] | Lr[1e-05]
+Step[31000] | Loss[0.938720703125] | Lr[1e-05]
+Step[31000] | Loss[0.6118578910827637] | Lr[1e-05]
+Step[31000] | Loss[0.5152111649513245] | Lr[1e-05]Step[31000] | Loss[0.8098517656326294] | Lr[1e-05]
+
+Step[31500] | Loss[0.8464499115943909] | Lr[1e-05]
+Step[31500] | Loss[0.9586156010627747] | Lr[1e-05]
+Step[31500] | Loss[0.7396339178085327] | Lr[1e-05]
+Step[31500] | Loss[0.7531678080558777] | Lr[1e-05]
+Step[32000] | Loss[0.6575514078140259] | Lr[1e-05]
+Step[32000] | Loss[0.7163887023925781] | Lr[1e-05]
+Step[32000] | Loss[0.8349862098693848] | Lr[1e-05]Step[32000] | Loss[0.6575563549995422] | Lr[1e-05]
+
+Step[32500] | Loss[0.7018049359321594] | Lr[1e-05]
+Step[32500] | Loss[0.5305687189102173] | Lr[1e-05]
+Step[32500] | Loss[0.6574124693870544] | Lr[1e-05]Step[32500] | Loss[0.7369853854179382] | Lr[1e-05]
+
+Step[33000] | Loss[0.4426451623439789] | Lr[1e-05]
+Step[33000] | Loss[0.6724057197570801] | Lr[1e-05]
+Step[33000] | Loss[0.6046445369720459] | Lr[1e-05]
+Step[33000] | Loss[0.7789925336837769] | Lr[1e-05]
+slurmstepd: error: *** STEP 58224.1 ON gpu001 CANCELLED AT 2023-11-08T16:29:39 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 58224 ON gpu001 CANCELLED AT 2023-11-08T16:29:39 DUE TO TIME LIMIT ***
