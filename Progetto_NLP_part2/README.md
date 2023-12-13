@@ -6,7 +6,7 @@ ORFEO logs
 Classes used to access in an efficient way the dataset (that is indeed in a json extension)
 ### linear_probes.py
 Class that manages the training of the linear probes
-### perplexity_dataset.py
+### perplexity_dataset2.py
 Functions used to generate and test the datasets
 ### test.py
 Functions for testing and debugging
