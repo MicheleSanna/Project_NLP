@@ -33,6 +33,10 @@ def ppl_bert(model, inputs, tokenizer):
     ppl = torch.exp(loss/len)
     return ppl.item()
 
+#IMPORTANT: ppl_bert and ppl_bert_2 are equivalent. They do the same calculation but 
+#ppl_bert is less VRAM intensive (in order to run on my beautiful laptop) and ppl_bert_2
+#is much faster but at the cost of more VRAM
+
 def ppl_bert_2(model, inputs, tokenizer):
     with torch.no_grad():
         tensor_input = tokenizer.encode(inputs, return_tensors='pt')
