@@ -1,4 +1,4 @@
-# classification_run_bert
+### classification_run_bert
 Contains the model's parameter saves from the run of 5 epochs for the classification task's fine tuning of bert and its tensorboard logs.
 # classification_run_bert
 Contains the model's parameter saves from the run of 5 epochs for the classification task's fine tuning of gpt-2 and its tensorboard logs.
@@ -24,3 +24,5 @@ The script for launching the training.
 ORFEO log for the 1 epoch training experiment with gpt (cosine stands for "cosine annealing with warm restarts')
 # bert_cosine.out
 ORFEO log for the 1 epoch training experiment with bert (cosine stands for "cosine annealing with warm restarts')
+# launch.sh
+Bash script for launching the training in ORFEO
