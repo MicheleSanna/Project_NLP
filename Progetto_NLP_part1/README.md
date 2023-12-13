@@ -1,4 +1,4 @@
-# classification_run_bert
+*classification_run_bert*
 Contains the model's parameter saves from the run of 5 epochs for the classification task's fine tuning of bert and its tensorboard logs.
 # classification_run_bert
 Contains the model's parameter saves from the run of 5 epochs for the classification task's fine tuning of gpt-2 and its tensorboard logs.
